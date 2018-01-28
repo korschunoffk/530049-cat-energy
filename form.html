@@ -3,22 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Кэт энерджи</title>
+    <link href="source/css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <img src="http://placehold.it/50x30" alt="Логотип Cat Energy">
-      <a class="page-header__logo" href="#"><img src="http://placehold.it/50x30" alt="Логотип Cat Energy"></a>
-      <input id="menu_sw" type="checkbox">
-      <label for="menu_sw">Открыть меню</label>
+      <div class="page-header__wrapper">
+          <img src="http://placehold.it/50x30" alt="Логотип Cat Energy">
+          <a class="page-header__logo" href="#"><img src="http://placehold.it/50x30" alt="Логотип Cat Energy"></a>
+          <input id="menu_sw" type="checkbox">
+          <label for="menu_sw">Открыть меню</label>
+      </div>
       <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
+        <ul class="main-nav__list ">
+          <li class="main-nav__item">
             <a href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item ">
             <a href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item site-list__item--active">
+          <li class="main-nav__item main-nav__item--active">
             <a>Подбор программы</a>
           </li>
         </ul>
@@ -95,7 +98,7 @@
         <small class="selection__notice"><sup>*</sup>-Обязательные поля</small>
       </form>
     </main>
-    <footer class="page-footer">
+ <footer class="page-footer">
       <section class="partnership">
         <div class="partnership__header">
           <h3 class="partnership__invite"> приглашаем к сотрудничеству дилеров!</h3>
@@ -103,18 +106,20 @@
             ул. Большая Конюшенная, д.19/8 Санкт-Петербург
           </p>
         </div>
-        <div class="partnership__map-wrapper">
-        </div>
       </section>
-      <a class="page-footer__logo" href="#"><img src="http://placehold.it/50x30" alt="Логотип Cat Energy"></a>
-      <div class="page-footer__social social">
-        <a class="social__link social__link--vkontakte" href="#">vkontante</a>
-        <a class="social__link social__link--instagram" href="#">instagram</a>
-        <a class="social__link social__link--facebook" href="#">facebook</a>
+      <div class="map-wrapper">map
       </div>
-      <div class="page-footer__developers developers">
-        <a class="developers__item developers__item--text" href="#">HTML Academy</a>
-        <a class="developers__item developers__item--pic" href="#">Логотип HTML Academy</a>
+      <div class="page-footer__wrapper">    
+          <a class="page-footer__logo" href="#"><img src="http://placehold.it/50x30" alt="Логотип Cat Energy"></a>
+          <div class="page-footer__social social">
+            <a class="social__link social__link--vkontakte" href="#">vkontante</a>
+            <a class="social__link social__link--instagram" href="#">instagram</a>
+            <a class="social__link social__link--facebook" href="#">facebook</a>
+          </div>
+          <div class="page-footer__developers developers">
+            <a class="developers__item developers__item--text" href="#">HTML Academy</a>
+            <a class="developers__item developers__item--pic" href="#">Логотип HTML Academy</a>
+          </div>
       </div>
     </footer>
   </body>
