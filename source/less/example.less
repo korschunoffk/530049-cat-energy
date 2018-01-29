@@ -1,0 +1,41 @@
+.example {
+    background-color: @bg-grey; 
+    padding: 0 20px;
+}
+
+
+.example__list-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.example__result{
+  display: block;
+  width:124px;
+  height:56px;
+  border:1px solid #cdcdcd;
+  border-radius: 2px;
+  position:relative;
+}
+.example__text{
+    display: block;
+    position:absolute;
+    top:40px;
+    right:20px;
+    background-color: @bg-grey; 
+    z-index: 2;
+    width:88px;
+    height:25px;
+}
+.example__money-spent{
+    display: block;
+    margin:0 auto;
+    padding-top:20px;
+}
+.example__before{
+    display: block;
+}
+.example__after{
+    display:none;
+}
+#pic_sw:checked ~ .example__before{ display: none;}
+#pic_sw:checked ~ .example__after{ display: block;}
