@@ -4,10 +4,7 @@
     background-image: url(../img/index-mobile.jpg);
     background-repeat: no-repeat;
     background-size:auto;
-}
-
-@media (min-width: @tablet-width) {
-    .promo {
+    @media (min-width: @tablet-width) {
         width:708px;
         padding: 0 30px;
         min-height: 840px;
@@ -16,14 +13,10 @@
         background-size:auto;
         background-position: bottom;
     }
-}
-
-@media (min-width: @desktop-width) {
-    .promo {
-      width:1440px;    
-      background-image: url(../img/index-desktop.jpg);
-      background-repeat: no-repeat;
-      background-size:contain;
-      background-position:100% 0; 
+    @media (min-width: @desktop-width) {
+        width:1440px;    
+        background-image: url(../img/index-desktop.jpg);
+        background-size:contain;
+        background-position:100% 0; 
     }
 }
