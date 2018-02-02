@@ -1,4 +1,5 @@
 .example {
+    position: relative;
     background-color: @bg-grey;
     @media (min-width: @tablet-width) {
         background-color:white;
@@ -17,17 +18,21 @@
 
 .example__wrapper {
     background-color:@bg-grey;
-    width: 280px;
+    width: 320px;
+    padding: 0 20px;
     .ma;
     @media (min-width: @tablet-width) {
         width:708px;
+        padding: 0 ;
     }
     @media (min-width: @desktop-width) {
-        width:1220px;
+        width:1440px;
+        padding: 0 110px;
         display: flex;
         justify-content: space-between;
     }
 }
+
 
 .example__caption {
     display: block;
