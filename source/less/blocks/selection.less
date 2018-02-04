@@ -1,72 +1,80 @@
 .selection__wrapper-top {
-    display:flex;
-    flex-wrap: wrap;
-    @media (min-width: @desktop-width) {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-    }
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 }
 
 .selection__item {
-    display:flex;
-    flex-wrap: wrap;
-    .regular;
-    .uppercase;
-    .text-black;
-    font-size: 16px;
-    line-height:18px;
-    @media (min-width: @tablet-width) {
+  display: flex;
+  flex-wrap: wrap;
+  .regular;
+  .uppercase;
+  .text-black;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: @tablet-width) {
     font-size: 20px;
-    line-height:20px;
-    }
+    line-height: 20px;
+  }
 }
 
 .selection__wrapper-contacts {
-    display:flex;
-    flex-wrap:wrap;
-    @media (min-width: @desktop-width) {
-        justify-content: space-between;
-        width: 100%;
-    }
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .selection__item--comments {
-    display:block;
+  display:block;
 }
 
 .selection__caption {
-    .regular;
-    .text-black;
-    font-size: 24px;
-    line-height:24px;
-    @media (min-width: @tablet-width) {
-        font-size: 36px;
-        line-height:36px;
-    }
+  .regular;
+  .text-black;
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
+
 .selection-button {
-    width:100%;
-    background-color: @button-green;
-    border: none;
-    .regular;
-    .uppercase;
-    .text-white;
-    font-size: 16px;
-    line-height: 40px;
-    @media (min-width: @tablet-width) {
-        width: 284px;
-        line-height: 52px;
-        font-size: 20px;
-    }
+  width: 100%;
+  background-color: @button-green;
+  border: none;
+  .regular;
+  .uppercase;
+  .text-white;
+  font-size: 16px;
+  line-height: 40px;
+
+  @media (min-width: @tablet-width) {
+    width: 284px;
+    line-height: 52px;
+    font-size: 20px;
+  }
 }
+
 .selection__notice {
-    .arial;
-    .text-gray;
-    font-size: 14px;
-    line-height: 16px;
-    @media (min-width: @tablet-width) {
-        font-size: 16px;
-        line-height: 18px;
-    }
+  .arial;
+  .text-gray;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
