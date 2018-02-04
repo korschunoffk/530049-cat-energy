@@ -3,16 +3,17 @@
   background-color: @bg-grey;
 
   @media (min-width: @tablet-width) {
-    background-color:white;
+    background-color: white;
   }
 
   @media (min-width: @desktop-width) {
-    background-color:white;
+    background-color: white;
   }
 }
 
 .example__caption-wrap {
   background-color: @bg-grey;
+
   @media (min-width: @tablet-width) {
     background-color: white;
   }
@@ -26,7 +27,7 @@
 
   @media (min-width: @tablet-width) {
     width: 708px;
-    padding: 0 ;
+    padding: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -34,7 +35,7 @@
     padding: 0 110px;
     display: flex;
     justify-content: space-between;
-    }
+  }
 }
 
 .example__caption {
@@ -44,10 +45,10 @@
   .regular;
   .text-black;
   font-size: 36px;
-  line-height: 60px
+  line-height: 60px;
   @media (min-width: @tablet-width) {
     font-size: 60px;
-    width:708px;
+    width: 708px;
   }
 
   @media (min-width: @desktop-width) {
@@ -76,14 +77,13 @@
 
   @media (min-width: @desktop-width) {
     background-color: @bg-grey;
-    background-color: @bg-grey;
     width: 433px;
   }
 }
 
 .example__cat-wrap {
   @media (min-width: @desktop-width) {
-    width:610px;
+    width: 610px;
   }
 }
 
@@ -96,7 +96,7 @@
   position: relative;
 }
 
-.example__text{
+.example__text {
   display: block;
   position: absolute;
   top: 40px;
@@ -117,19 +117,25 @@
   }
 
   @media (min-width: @tablet-width) {
-    background-color:@bg-grey;
+    background-color: @bg-grey;
   }
 }
 
-.example__before{
+.example__before {
   display: block;
 }
 
 .example__after {
-  display:none;
+  display: none;
 }
-#pic_sw:checked ~ .example__before{ display: none;}
-#pic_sw:checked ~ .example__after{ display: block;}
+
+.pic_sw:checked ~ .example__before {
+  display: none;
+}
+
+.pic_sw:checked ~ .example__after {
+  display: block;
+}
 
 .example__description {
   .arial;
