@@ -16,28 +16,34 @@
 .main-nav__item a {
   .medium;
   .uppercase;
-  .nounderline;
-  .text-black;
+  text-decoration: none;
+  color: black;
   font-size: 20px;
   line-height: 20px;
 
   @media (min-width: @tablet-width) {
     .regular;
     .uppercase;
-    .nounderline;
-    .text-black;
+    text-decoration: none;
+    color: black;
     font-size: 18px;
     line-height: 25px;
   }
 
   @media (min-width: @desktop-width) {
-    .text-white;
+    color: white;
     font-size: 20px;
   }
 }
 
+.main-nav__item--catalog a {
+  @media (min-width: @desktop-width) {
+    color: black;
+  }  
+}
+
 .main-nav__item--black a {
   @media (min-width: @desktop-width) {
-    .text-black;
+    color: black;
   }
 }
