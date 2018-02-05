@@ -1,0 +1,49 @@
+.main-nav__list {
+  display: block;
+  list-style: none;
+
+  @media (min-width: @tablet-width) {
+    min-width: 444px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 480px;
+  }
+}
+
+.main-nav__item a {
+  .medium;
+  .uppercase;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    .regular;
+    .uppercase;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: white;
+    font-size: 20px;
+  }
+}
+
+.main-nav__item--catalog a {
+  @media (min-width: @desktop-width) {
+    color: black;
+  }
+}
+
+.main-nav__item--black a {
+  @media (min-width: @desktop-width) {
+    color: black;
+  }
+}
