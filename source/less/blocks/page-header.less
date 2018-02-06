@@ -10,6 +10,8 @@
 
   @media (min-width: @desktop-width) {
     width: 1220px;
+    position: relative;
+    z-index: 2;
   }
 }
 
@@ -17,4 +19,27 @@
   display: flex;
   justify-content: space-between;
   padding: 0 20px;
+}
+
+.page-header__nav-wrapper {
+  display: none;
+    @media (min-width: @tablet-width) {
+        display: block;
+    }  
+}
+
+.menu_switch:checked ~ .page-header__nav-wrapper {
+  display: block;
+}
+
+.page-header__wrapper label {
+  @media (min-width: @tablet-width) {
+    .visually-hidden;
+    }
+}
+.page-header__menu-button {
+    display: block;
+    background-image: url("../img/mobile-menu-open.png");
+    width: 24px;
+    height: 18px;
 }

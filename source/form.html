@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Кэт энерджи</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -10,22 +11,24 @@
       <div class="page-header__wrapper">
         <img src="http://placehold.it/50x30" alt="Логотип Cat Energy">
         <a class="page-header__logo" href="#"><img src="http://placehold.it/50x30" alt="Логотип Cat Energy"></a>
-        <input id="menu_sw" type="checkbox">
-        <label for="menu_sw">Открыть меню</label>
+        <label class="page-header__menu-button" for="menu_switch"></label>
       </div>
-      <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list ">
-          <li class="main-nav__item main-nav__item--black">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item main-nav__item--black">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item main-nav__item--active main-nav__item--black">
-            <a>Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <input type="checkbox" id="menu_switch"class="visually-hidden menu_switch">
+      <div class="page-header__nav-wrapper">
+        <nav class="page-header__nav main-nav">
+          <ul class="main-nav__list ">
+            <li class="main-nav__item main-nav__item--black">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--black">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item main-nav__item--black main-nav__item--active">
+              <a href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page-form">
       <h1 class="page-form__caption">Подбор программы</h1>

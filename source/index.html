@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Кэт энерджи</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -10,22 +11,24 @@
       <div class="page-header__wrapper">
         <img src="http://placehold.it/50x30" alt="Логотип Cat Energy">
         <a class="page-header__logo" href="#"><img src="http://placehold.it/50x30" alt="Логотип Cat Energy"></a>
-        <input id="menu_sw" type="checkbox" checked>
-        <label for="menu_sw">Открыть меню</label>
+        <label class="page-header__menu-button" for="menu_switch"></label>
       </div>
-      <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list ">
-          <li class="main-nav__item main-nav__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="main-nav__item ">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+      <input type="checkbox" id="menu_switch"class="visually-hidden menu_switch">
+      <div class="page-header__nav-wrapper">
+        <nav class="page-header__nav main-nav">
+          <ul class="main-nav__list ">
+            <li class="main-nav__item main-nav__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item ">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section class="promo">
       <div class="promo__wrapper">
@@ -71,11 +74,11 @@
       </section>
     </main>
     <section class="example">
-      <div class="example__caption-wrap">
+      <div class="example__caption-wrapper">
         <h2 class="example__caption">Живой пример</h2>
       </div>
-      <div class="example__wrapper">
-        <div class="example__text-wrap">
+      <div class="example__center-wrapper">
+        <div class="example__text-wrapper">
           <p class="example__description">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
@@ -91,17 +94,19 @@
             <h4 class="example__money-spent">затраты на питание: 15 000 руб.</h4>
           </div>
         </div>
-        <div class="example__cat-wrap">
-          <input type="checkbox" class="visually-hidden example_switch">
-          <div class="example__before">
-            <img src="../530049-cat-energy/source/img/before-mobile@1x.png" alt="Было">
+        <div class="example__cat-wrapper">
+          <div class="example__center-cat-wrapper">
+            <input type="checkbox" id="example_switch" class="visually-hidden example_switch">
+            <div class="example__before">
+              <img src="img/before-mobile@1x.png" alt="Было">
+            </div>
+            <div class="example__after">
+              <img src="img/after-mobile@1x.png" alt="Стало">
+            </div>
+            <label for="example_switch" class="example__toggles">было</label>
+            <label for="example_switch">*</label>
+            <label for="example_switch" class="example__toggles">стало</label>
           </div>
-          <div class="example__after">
-            <img src="../530049-cat-energy/source/img/after-mobile@1x.png" alt="Стало">
-          </div>
-          <label for="example_switch" class="example__toggles">было</label>
-          <label for="example_switch">*</label>
-          <label for="example_switch" class="example__toggles">стало</label>
         </div>
       </div>
     </section>
@@ -131,5 +136,3 @@
     </footer>
   </body>
 </html>
-COPY TO CLIPBOARD	 SELECT ALL
-© FreeFormatter.com - FREEFORMATTER is
