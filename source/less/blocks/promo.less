@@ -1,6 +1,7 @@
 .promo {
   width: 100%;
   background: rgb(104, 172, 63);
+  position: relative;
 
   @media (min-width: @tablet-width) {
     background: #ffffff;
@@ -8,15 +9,17 @@
 
   @media (min-width: @desktop-width) {
     background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(104, 172, 63) 49.9%, rgb(104, 172, 63) 100%);
+    margin-top: -110px;
   }
 }
 
 .promo__wrapper {
   margin: 0 auto;
-  width: 280px;
+  width: 320px;
   min-height: 305px;
   background-image: url("../img/index-background-mobile.jpg");
   background-repeat: no-repeat;
+  background-position: center;
   margin-bottom: 197px;
   position: relative;
 
@@ -63,6 +66,8 @@
   color: white;
   font-size: 36px;
   line-height: 36px;
+  width: 280px;
+  .ma;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -76,6 +81,8 @@
   color: white;
   font-size: 14px;
   line-height: 14px;
+  width: 280px;
+  .ma;
 
   @media (min-width: @tablet-width) {
     color: black;
@@ -85,16 +92,19 @@
 }
 
 .promo__button {
+  position: absolute;
   .regular;
   .uppercase;
   color: white;
   text-decoration: none;
   font-size: 14px;
   line-height: 40px;
-  width: 100%;
+  width: 280px;
   display: block;
   text-align: center;
   background-color: @button-green;
+  margin-top: 300px;
+  margin-left: 20px;
 
   @media (min-width: @tablet-width) {
     width: 245px;
