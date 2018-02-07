@@ -9,8 +9,8 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <img src="http://placehold.it/50x30" alt="Логотип Cat Energy">
-        <a class="page-header__logo" href="#"><img src="http://placehold.it/50x30" alt="Логотип Cat Energy"></a>
+        <img class="page-header__icon" src="img/icon-logo-mobile.svg" alt="Логотип Cat Energy">
+        <a class="page-header__logo" href="#"><img src="img/logo-cat-enegry.svg" alt="Логотип Cat Energy"></a>
         <label class="page-header__menu-button" for="menu_switch"></label>
       </div>
       <input type="checkbox" id="menu_switch"class="visually-hidden menu_switch">
@@ -43,14 +43,15 @@
         <div class="targets__item">
           <h3 class="targets__title targets__title--slim">Похудение</h3>
           <p class="targets__description">
-            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить ЛИШНИЙ ВЕС.
+            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
           <a class="targets__button" href="#">Каталог Slim</a>
         </div>
         <div class="targets__item">
           <h3 class="targets__title targets__title--mass">Набор массы</h3>
-          <p class="targets__description">
-            Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+          <p class="targets__description targets__description__mass">
+            Заработать авторитет среди дворовых котов
+            и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
           <a class="targets__button" href="#">Каталог Pro</a>
         </div>
@@ -103,9 +104,11 @@
             <div class="example__after">
               <img src="img/after-mobile@1x.png" alt="Стало">
             </div>
-            <label for="example_switch" class="example__toggles">было</label>
-            <label for="example_switch">*</label>
-            <label for="example_switch" class="example__toggles">стало</label>
+            <div class="example__slider-wrapper">
+              <label for="example_switch" class="example__toggles">было</label>
+              <label class="example__slider-bar" for="example_switch"></label>
+              <label for="example_switch" class="example__toggles">стало</label>
+            </div>
           </div>
         </div>
       </div>
@@ -115,22 +118,22 @@
         <div class="partnership__wrapper">
           <h3 class="partnership__invite"> приглашаем к сотрудничеству дилеров!</h3>
           <p class="partnership__address">
-            ул. Большая Конюшенная, д.19/8 Санкт-Петербург
+            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
           </p>
         </div>
       </section>
-      <div class="map-wrapper">map
+      <div class="page-footer__map-wrapper">map
       </div>
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="#"><img src="http://placehold.it/50x30" alt="Логотип Cat Energy"></a>
+        <a class="page-footer__logo" href="#"><img src="img/logo-cat-enegry.svg" alt="Логотип Cat Energy"></a>
         <div class="page-footer__social social">
-          <a class="social__link social__link--vkontakte" href="#">vkontante</a>
-          <a class="social__link social__link--instagram" href="#">instagram</a>
-          <a class="social__link social__link--facebook" href="#">facebook</a>
+          <a class="social__link social__link--vkontakte" href="#"></a>
+          <a class="social__link social__link--instagram" href="#"></a>
+          <a class="social__link social__link--facebook" href="#"></a>
         </div>
         <div class="page-footer__developers developers">
           <a class="developers__item developers__item--text" href="#">HTML Academy</a>
-          <a class="developers__item developers__item--pic" href="#">Логотип HTML Academy</a>
+          <a class="developers__item developers__item--logo" href="#"></a>
         </div>
       </div>
     </footer>

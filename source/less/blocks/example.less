@@ -27,6 +27,8 @@
   color: black;
   font-size: 36px;
   line-height: 60px;
+  padding-top: 18px;
+  padding-bottom: 22px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -42,6 +44,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 25px;
 
   @media (min-width: @tablet-width) {
     background-color: white;
@@ -62,6 +65,7 @@
 
 .example__text-wrapper {
   background-color: @bg-grey;
+  box-sizing: border-box;
   width: 320px;
   padding: 0 20px;
   .ma;
@@ -89,6 +93,7 @@
   background-color: @bg-grey;
   width: 320px;
   padding: 0 20px;
+  padding-top: 33px;
   .ma;
 
   @media (min-width: @tablet-width) {
@@ -109,22 +114,25 @@
   border: 1px solid #cdcdcd;
   border-radius: 2px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .example__text {
+  box-sizing: border-box;
   display: block;
   position: absolute;
-  top: 40px;
-  right: 20px;
+  top: 31px;
+  right: 18px;
   background-color: @bg-grey;
   z-index: 2;
   width: 88px;
+  padding: 15px;
   height: 25px;
   .arial;
   color: black;
   font-size: 12px;
   line-height: 12px;
-
+  text-align: center;
   @media (min-width: @tablet-width) {
     background-color: white;
     font-size: 14px;
@@ -138,10 +146,14 @@
 
 .example__before {
   display: block;
+  height: 244px;
+  padding-bottom: 30px;
 }
 
 .example__after {
   display: none;
+  height: 244px;
+  padding-bottom: 30px;
 }
 
 .example_switch:checked ~ .example__before {
@@ -153,10 +165,12 @@
 }
 
 .example__description {
+  .mp;
   .arial;
   color: black;
   font-size: 14px;
   line-height: 18px;
+  width: 279px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -165,11 +179,16 @@
 }
 
 .example__number {
+  position: relative;
+  z-index: 3;
   .regular;
   color: black;
   font-size: 24px;
   line-height: 24px;
-
+  .uppercase;
+  display: block;
+  padding-top: 13px;
+  text-align: center;
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 37px;
@@ -177,11 +196,16 @@
 }
 
 .example__money-spent {
+  width: 100%;
   .regular;
   color: black;
   font-size: 14px;
   line-height: 20px;
-
+  display: block;
+  .uppercase;
+  .mp;
+  padding-top: 34px;
+  text-align: center;
   @media (min-width: @tablet-width) {
     font-size: 20px;
   }
@@ -197,3 +221,37 @@
     font-size: 20px;
   }
 }
+
+.example__slider-wrapper {
+  .ma;
+  .uppercase;
+  width: 198px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 35px;
+
+
+}
+.example__slider-bar {
+  position:relative;
+  display: block;
+  box-sizing: border-box;
+  width: 84px;
+  height: 14px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #cdcdcd;
+  margin-left: 3px;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 6px;
+    background-color: @button-green;
+    border-radius: 3px;
+    top: 3px;
+    left: 5px;
+  }
+}
+

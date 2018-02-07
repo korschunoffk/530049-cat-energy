@@ -24,10 +24,14 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
+    .ma;
     background-image: url("../img/index-can-tablet.jpg");
-    width: 708px;
-    height: 609px;
-    margin-top: 50px;
+    background-position: 28px 230px;
+    width: 768px;
+    box-sizing: border-box;
+    padding:0 30px;
+    min-height: 840px;
+
   }
 
   @media (min-width: @desktop-width) {
@@ -44,7 +48,8 @@
   width: 280px;
   height: 271px;
   background-image: url("../img/index-can-mobile.png");
-  margin-top: 200px;
+  margin-top: 168px;
+  margin-left: 20px;
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -66,13 +71,20 @@
   color: white;
   font-size: 36px;
   line-height: 36px;
-  width: 280px;
+  width: 249px;
   .ma;
+  text-indent: 10px;
+  padding-top: 28px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
     color: black;
+    width: 427px;
+    margin:0;
+    padding-left: 86px;
+    padding-top: 30px;
+    text-indent: 0;
   }
 }
 
@@ -83,11 +95,18 @@
   line-height: 14px;
   width: 280px;
   .ma;
+  .uppercase;
+  text-align: center;
+  padding-top: 25px;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     color: black;
     font-size: 20px;
     line-height: 20px;
+    width: 295px;
+    padding-left: 80px;
+    padding-top: 42px;
   }
 }
 
@@ -103,12 +122,14 @@
   display: block;
   text-align: center;
   background-color: @button-green;
-  margin-top: 300px;
+  margin-top: 301px;
   margin-left: 20px;
 
   @media (min-width: @tablet-width) {
     width: 245px;
     line-height: 52px;
     font-size: 20px;
+    margin-top: 43px;
+    margin-left: 88px;
   }
 }

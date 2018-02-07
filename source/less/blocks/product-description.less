@@ -1,6 +1,6 @@
 .product-description {
   padding: 0 20px;
-
+  padding-bottom: 28px;
   @media (min-width: @tablet-width) {
     padding: 0 30px;
   }
@@ -13,7 +13,6 @@
 .product-description__list {
   list-style: none;
   .mp;
-  display: block;
 
   @media (min-width: @tablet-width) {
     .mp;
@@ -25,12 +24,15 @@
 }
 
 .product-description__item {
-  min-height: 60px;
-  margin-bottom: 20px;
   .arial;
   color: black;
   font-size: 14px;
   line-height: 18px;
+  width:200px;
+  padding-left: 80px;
+  padding-top: 8px;
+  min-height:72px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     background-color: @bg-grey;
@@ -58,9 +60,73 @@
   .regular;
   color: black;
   font-size: 36px;
-  line-height: 60px;
+  line-height: 50px;
+  .mp;
+  padding-bottom: 27px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
+    line-height: 60px;
+
+  }
+}
+
+.product-description__item--nutrition {
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-color: @button-green;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    left: 0;
+    top:7px;
+  }
+}
+
+.product-description__item--powder {
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/advantage-powder@1x.png");
+    background-color: @button-green;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    left: 0;
+    top:6px;
+  }
+}
+
+.product-description__item--change {
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/advantage-dining@1x.png");
+    background-color: @button-green;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    left: 0;
+    top:6px;
+  }
+}
+
+.product-description__item--month {
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/advantage-clock@1x.png");
+    background-color: @button-green;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    left: 0;
+    top:6px;
   }
 }
