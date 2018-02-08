@@ -40,6 +40,9 @@
 
   @media (min-width: @desktop-width) {
     width: 1220px;
+    padding-left: 3px;
+    padding-top: 79px;
+    padding-bottom: 76px;
   }
 }
 
@@ -57,6 +60,9 @@
 
   @media (min-width: @desktop-width) {
     background-color: @bg-grey;
+    padding-top: 68px;
+    width: 367px;
+    padding-bottom: 0;
   }
 }
 
@@ -167,6 +173,9 @@
     top: 63px;
     right: 9px;
   }
+  @media (min-width: @desktop-width) {
+    background-color: @bg-grey;
+  }
 }
 
 .example__before {
@@ -186,6 +195,16 @@
     top: -169px;
     left: 45px;
   }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    background-image: url("../img/before-desktop.png");
+    background-repeat: no-repeat;
+    width: 636px;
+    height: 517px;
+    top: -190px;
+    left: -40px;
+  }
 }
 
 .example__after {
@@ -199,6 +218,16 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     background-image: url("../img/before-after.png");
+    background-repeat: no-repeat;
+    width: 636px;
+    height: 517px;
+    top: -190px;
+    left: -40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    background-image: url("../img/before-desktop.png");
     background-repeat: no-repeat;
     width: 636px;
     height: 517px;
@@ -227,6 +256,12 @@
     width: 700px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 435px;
+    padding-top: 71px;
+    padding-left: 2px;
   }
 }
 
@@ -266,6 +301,12 @@
     width: 175px;
     text-align: right;
   }
+
+  @media (min-width: @desktop-width) {
+    white-space: pre-wrap;
+    width: 328px;
+    padding-top: 55px;
+  }
 }
 
 .example__toggles {
@@ -291,6 +332,10 @@
   @media (min-width: @tablet-width) {
     padding-top: 367px;
     width: 570px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 38px;
   }
 }
 .example__slider-bar {

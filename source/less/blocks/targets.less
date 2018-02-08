@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 110px;
+    padding-top: 80px;
   }
 }
 
@@ -23,13 +24,13 @@
   @media (min-width: @tablet-width) {
     width: 708px;
     min-height: 372px;
-    box-sizing: border-box;
     padding-left: 53px;
     margin-bottom: 30px;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 372px;
+    margin: 0;
     width: 570px;
   }
 }
@@ -51,6 +52,9 @@
     padding-top: 76px;
     padding-bottom: 25px;
   }
+  @media (min-width: @desktop-width) {
+    padding-left: 162px;
+  }
 }
 
 .targets__description {
@@ -69,6 +73,10 @@
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
+  }
+  @media (min-width: @desktop-width) {
+    width: 470px;
+    padding-top: 49px;
   }
 }
 
@@ -113,6 +121,20 @@
       top: 61px;
     }
   }
+  @media (min-width: @desktop-width) {
+    padding-top: 32px;
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/icon-right-arrow-long.svg");
+      width: 24px;
+      width: 24px;
+      height: 11px;
+      background-repeat: no-repeat;
+      left: 130px;
+      top: 35px;
+    }
+  }
 }
 
 .targets__title--slim {
@@ -139,6 +161,20 @@
       left: 447px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/icon-slim-mobile.png");
+      background-size: cover;
+      width: 100px;
+      height: 106px;
+      top: 41px;
+      left: 51px;
+    }
+  }
+
 }
 
 .targets__title--mass {
@@ -165,10 +201,27 @@
       left: 413px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/icon-mass-mobile.png");
+      background-size: cover;
+      width: 134px;
+      height: 100px;
+      top: 47px;
+      left: 34px;
+    }
+  }
 }
 
 .targets__description__mass {
   @media (min-width: @tablet-width) {
     width:340px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width:475px;
   }
 }

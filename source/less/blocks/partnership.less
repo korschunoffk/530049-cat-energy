@@ -1,5 +1,14 @@
 .partnership {
   background-color: white;
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    width:1440px;
+    padding: 0 110px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    .ma;
+  }
 }
 
 .partnership__wrapper {
@@ -14,13 +23,20 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    width: 627px;
-    padding-top: 65px;
+    width: 632px;
+    padding-top: 67px;
+    padding-bottom: 38px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
-    padding: 0 40px;
+    .mp;
+    position: absolute;
+    box-sizing: border-box;
+    width:575px;
+    min-height: 201px;
+    top:95px;
+    padding:0 73px;
+    padding-top: 65px;
   }
 }
 
@@ -32,8 +48,13 @@
   line-height: 20px;
   .mp;
   width: 140px;
+
   @media (min-width: @tablet-width) {
+    padding-left: 2px;
     font-size: 20px;
+    line-height: 24px;
+    width: 170px;
+    white-space: pre-wrap;
   }
 }
 
@@ -47,5 +68,18 @@
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    width: 170px;
+    white-space: pre-wrap;
+    margin-top: -4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    margin-top:-3px;
+    width: 177px;
+    line-height: 21px;
+    white-space: pre-wrap;
   }
 }
