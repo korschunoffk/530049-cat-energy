@@ -34,15 +34,20 @@
   }
 }
 
-.selection__item--comments {
+.selection__comments {
   display: block;
 }
 
 .selection__caption {
+  position: relative;
+  width: 163px;
+  padding: 0 20px;
+  box-sizing: border-box;
   .regular;
   color: black;
   font-size: 24px;
   line-height: 24px;
+  background-color: white;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
@@ -50,6 +55,29 @@
   }
 }
 
+.selection__caption::before{
+  position:absolute;
+  content: "";
+  z-index: -1;
+  width: 320px;
+  height: 3px;
+  background-color: @button-green;
+  top: 14px;
+  right:-158px;
+}
+.selection__comments textarea {
+  margin-top: 15px;
+  margin-left: 20px;
+  box-sizing: border-box;
+  .uppercase;
+  .regular;
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 16px;
+  padding-right: 5px;
+  padding-top: 13px;
+  padding-bottom: 9px;
+}
 .selection-button {
   width: 100%;
   background-color: @button-green;

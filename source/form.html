@@ -50,23 +50,23 @@
             </label>
           </div>
           <div class="selection__item form-targets">
-            <label class="form-targets__item">
-            <input type="radio"  value="weight-loss" name="targets" checked >
-            похудение
+            <label>
+            <input type="radio" id="toggle1" value="weight-loss" name="targets"   checked >
+              <span  class="form-targets__item form-targets__item--1">похудение</span>
             </label>
-            <label class="form-targets__item">
-            <input type="radio"  value="mass-up" name="targets"  >
-            набор массы
+            <label>
+            <input type="radio"  value="mass-up" name="targets" id="toggle2" >
+              <span  class="form-targets__item form-targets__item--2">набор массы</span>
             </label>
-            <label class="form-targets__item">
-            <input type="radio"  value="dont-know" name="targets"  >
-            не знаю (нужен ваш совет)
-            </label >
+            <label>
+            <input type="radio"  value="dont-know" name="targets"  id="toggle3">
+              <span  class="form-targets__item form-targets__item--3">не знаю (нужен ваш совет)</span>
+            </label>
           </div>
         </div>
         <div class="selection__item  form-contacts">
-          <h2 class= "form-contacts__caption">контактные данные (владельца кота)</h2>
-          <div class="selection__wrapper-contacts">
+          <h2 class= "form-contacts__caption">Контактные данные (владельца кота)</h2>
+          <div class="form-contacts__wrapper">
             <label class="form-contacts__item form-contacts__item--email">
             e-mail:<sup>*</sup>
             <input type="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required>
@@ -77,9 +77,9 @@
             </label>
           </div>
         </div>
-        <div class="selection__item selection__item--comments">
+        <div class="selection__comments">
           <h2 class="selection__caption">Комментарий</h2>
-          <textarea name="cat-comment" placeholder="расскажите обо всех повадках кота" rows="5" cols="20">
+          <textarea name="cat-comment" rows="7" cols="40">расскажите обо всех повадках кота
           </textarea>
         </div>
         <div class="selection__item extra">
