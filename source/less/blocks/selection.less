@@ -35,7 +35,16 @@
 }
 
 .selection__comments {
-  display: block;
+  position: relative;
+}
+.selection__comments::before {
+  position:absolute;
+  content: "";
+  z-index: -1;
+  width: 100vw;
+  height: 3px;
+  background-color: @button-green;
+  top: 14px;
 }
 
 .selection__caption {
@@ -54,17 +63,6 @@
     line-height: 36px;
   }
 }
-
-.selection__caption::before{
-  position:absolute;
-  content: "";
-  z-index: -1;
-  width: 320px;
-  height: 3px;
-  background-color: @button-green;
-  top: 14px;
-  right:-158px;
-}
 .selection__comments textarea {
   margin-top: 15px;
   margin-left: 20px;
@@ -79,7 +77,9 @@
   padding-bottom: 9px;
 }
 .selection-button {
-  width: 100%;
+  width: 280px;
+  margin: 0 20px;
+  margin-top: 26px;
   background-color: @button-green;
   border: none;
   .regular;
@@ -100,6 +100,13 @@
   color: @text-gray;
   font-size: 14px;
   line-height: 16px;
+  display: block;
+  width: 157px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-left: 2px;
+  margin-bottom: 32px;
+
 
   @media (min-width: @tablet-width) {
     font-size: 16px;

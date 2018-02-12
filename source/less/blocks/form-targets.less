@@ -6,8 +6,15 @@
   padding-top: 14px;
   padding-bottom: 14px;
   border-bottom: 1px solid #cdcdcd;
+
   @media (min-width: @tablet-width) {
-    width: 631px;
+    .mp;
+    width: 668px;
+    margin-left: 42px;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    border: 1px solid #cdcdcd;
+    border-right: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -23,11 +30,17 @@
 .form-targets__item {
   display: block;
   width: 280px;
-  height:43px;
+  min-height:43px;
   box-sizing: border-box;
   line-height:42px;
   padding-left: 45px;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    line-height:52px;
+    padding-left: 85px;
+  }
 }
 
 .form-targets__item::before {
@@ -40,6 +53,13 @@
   box-shadow: 0 0 1px black;
   top: 6px;
   left: 1px;
+
+  @media (min-width: @tablet-width) {
+    width: 39px;
+    height: 39px;
+    top: 7px;
+    left: 27px;
+  }
 }
 #toggle1:checked ~ .form-targets__item--1 ,
 #toggle2:checked ~ .form-targets__item--2 ,
@@ -53,6 +73,13 @@
       background-color: @button-green;
       top: 14px;
       left: 9px;
+
+      @media (min-width: @tablet-width) {
+        width: 18px;
+        height: 18px;
+        top: 18px;
+        left: 38px;
+  }
   }
 }
 

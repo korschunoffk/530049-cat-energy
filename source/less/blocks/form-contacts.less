@@ -15,23 +15,38 @@
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    width: 594px;
+    .mp;
+    padding-left: 40px;
+    padding-right:42px;
+    padding-top: 75px;
+    padding-bottom: 65px;
   }
 }
-.form-contacts__caption::before {
+.form-contacts {
+  position:relative;
+}
+.form-contacts::before {
   position:absolute;
   content: "";
   z-index: -1;
-  width: 320px;
+  width: 1440px;
   height: 3px;
   background-color: @button-green;
-  top: 14px;
-  right:-98px;
+  top: 40px;
+  left: -500px;
+  @media (min-width: @tablet-width) {
+    top: 97px;
+  }
 }
 .form-contacts__wrapper {
   width: 280px;
   .ma;
   display: flex;
   flex-wrap: wrap;
+  @media (min-width: @tablet-width) {
+    width: 640px;
+  }
 }
 .form-contacts__item{
   width: 280px;
@@ -39,6 +54,12 @@
   .ma;
   display: flex;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    width: 638px;
+    padding-left: 10px;
+    height:72px;
+  }
 }
 .form-contacts__item input {
   position: relative;
@@ -52,14 +73,34 @@
   padding-left: 13px;
   border: 1px solid #e6e6e6;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    line-height: 48px;
+    font-size: 20px;
+    margin-left: 20px;
+    padding-left: 15px;
+  }
+}
+.form-contacts__item--email input{
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+  }
 }
 .form-contacts__item--email input{
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
-  background-position: 93% 49%;
+  background-position: 97% 55%;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+  }
 }
 .form-contacts__item--phone input {
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
-  background-position: 94% 49%;
+  background-position: 97% 55%;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 20px;
+  }
 }

@@ -1,6 +1,12 @@
 .form-cat-info {
   border-bottom: 1px solid #cdcdcd;
   padding-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 25px;
+    border-bottom: none;
+    padding-bottom: 62px;
+  }
 }
 
 .form-cat-info__item {
@@ -13,7 +19,8 @@
 
 
   @media (min-width: @tablet-width) {
-    width: 631px;
+    width: 630px;
+    height: 72px;
   }
 
   @media (min-width: @desktop-width) {
@@ -32,4 +39,10 @@
   padding-left: 13px;
   border: 1px solid #e6e6e6;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    line-height: 52px;
+    font-size: 20px;
+    margin-left: 27px;
+  }
 }
