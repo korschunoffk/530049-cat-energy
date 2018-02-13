@@ -1,8 +1,33 @@
 .developers {
   display: flex;
   justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 22px;
 
   @media (min-width: @tablet-width) {
     min-width: 162px;
+    padding: 0;
+    padding-top: 27px;
   }
+  @media (min-width: @desktop-width) {
+    padding-top: 12px;
+  }
+}
+
+.developers__item--text {
+  text-decoration: none;
+  color:@text-gray;
+  width: 140px;
+  .arial;
+  .mp;
+  font-size: 16px;
+  line-height: 16px;
+  margin-right: -2px;
+}
+
+.developers__item--logo {
+  background-image: url("../img/logo-htmlacademy.svg");
+  width: 27px;
+  height: 34px;
+  margin-top:-8px;
 }

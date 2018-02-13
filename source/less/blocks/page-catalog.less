@@ -1,6 +1,5 @@
 .page-catalog {
-  width: 280px;
-  padding: 0 20px;
+  width: 320px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
@@ -9,19 +8,45 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
-    padding: 0 40px;
+    width: 1440px;
+    padding: 0 110px;
   }
 }
+.page-catalog__wrapper {
+  width: 320px;
+  box-sizing: border-box;
 
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
 .page-catalog__caption {
   .regular;
   color: black;
   font-size: 36px;
-  line-height: 103px;
+  line-height: 89px;
+  margin: 0;
+  padding: 0 20px;
+
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  padding-bottom: 13px;
 
   @media (min-width: @tablet-width) {
-    line-height: 201px;
+    padding: 0;
+    line-height: 60px;
     font-size: 60px;
+    padding-top: 30px;
+    padding-bottom: 79px;
+    border-bottom: none;
+  }
+  @media (min-width: @desktop-width) {
+    border-top: none;
+    padding-top: 15px;
   }
 }

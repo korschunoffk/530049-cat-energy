@@ -1,11 +1,71 @@
+.table {
+  width: 140px;
+  font-size: 12px;
+  line-height: 14px;
+  .mp;
+  border-collapse: collapse;
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+    margin-left: -55px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
+    margin-left: -16px;
+  }
+}
+
 .table__column {
   .arial;
   color: @text-gray;
-  font-size: 12px;
-  line-height: 16px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 29px;
+    border-bottom: none;
+  }
+  @media (min-width: @desktop-width) {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+.table__column--left {
+  text-align: left;
+}
+
+.table__column--right {
+  text-align: right;
+}
+.table--addictional {
+  width: 100%;
+  font-size: 14px;
+
+  @media (min-width: @tablet-width) {
+    width:324px;
+    margin-top:-3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 285px;
+    border-bottom: none;
+    margin-top: 21px;
+    margin-left: 36px;
+  }
+}
+.table--addictional .table__column--right {
+  width: 87px;
+
+  @media (min-width: @desktop-width) {
+    width: 44px;
+    border-bottom: none;
+  }
+}
+
+.table--addictional .table__column--left {
+  text-align: right;
+
+  @media (min-width: @desktop-width) {
+    border-bottom: none;
+    text-align: left;
   }
 }

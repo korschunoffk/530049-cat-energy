@@ -16,6 +16,7 @@
 
   @media (min-width: @tablet-width) {
     background-color: white;
+    border-top: 2px solid #f2f2f2;
   }
 }
 
@@ -27,14 +28,21 @@
   color: black;
   font-size: 36px;
   line-height: 60px;
+  padding-top: 18px;
+  padding-bottom: 22px;
 
   @media (min-width: @tablet-width) {
+    padding-top: 44px;
+    padding-bottom: 64px;
     font-size: 60px;
     width: 708px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1220px;
+    padding-left: 3px;
+    padding-top: 79px;
+    padding-bottom: 76px;
   }
 }
 
@@ -42,13 +50,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 25px;
 
   @media (min-width: @tablet-width) {
+    padding-top: 53px;
     background-color: white;
+    padding-bottom: 254px;
   }
 
   @media (min-width: @desktop-width) {
     background-color: @bg-grey;
+    padding-top: 68px;
+    width: 367px;
+    padding-bottom: 0;
   }
 }
 
@@ -62,12 +76,13 @@
 
 .example__text-wrapper {
   background-color: @bg-grey;
+  box-sizing: border-box;
   width: 320px;
   padding: 0 20px;
   .ma;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
+    width: 768px;
     padding: 0 30px;
     background-color: white;
   }
@@ -82,6 +97,7 @@
 .example__cat-wrapper {
   @media (min-width: @tablet-width) {
     background-color: @bg-grey;
+    min-height: 462px;
   }
 }
 
@@ -89,11 +105,13 @@
   background-color: @bg-grey;
   width: 320px;
   padding: 0 20px;
+  padding-top: 33px;
   .ma;
 
   @media (min-width: @tablet-width) {
     width: 708px;
     padding: 0 30px;
+    position: relative;
   }
 
   @media (min-width: @desktop-width) {
@@ -109,39 +127,113 @@
   border: 1px solid #cdcdcd;
   border-radius: 2px;
   position: relative;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+    height: 73px;
+  }
+
+}
+.example__result--mass {
+  @media (min-width: @tablet-width) {
+    margin-right: 42px;
+  }
+}
+.example__result--days {
+  @media (min-width: @tablet-width) {
+    margin-right: auto;
+  }
 }
 
 .example__text {
+  box-sizing: border-box;
   display: block;
   position: absolute;
-  top: 40px;
-  right: 20px;
+  top: 31px;
+  right: 18px;
   background-color: @bg-grey;
   z-index: 2;
   width: 88px;
+  padding: 15px;
   height: 25px;
   .arial;
   color: black;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
+    padding: 0;
     background-color: white;
     font-size: 14px;
     line-height: 14px;
+    width: 140px;
+    white-space: nowrap;
+    top: 63px;
+    right: 9px;
   }
-
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     background-color: @bg-grey;
   }
 }
 
 .example__before {
   display: block;
+  height: 244px;
+  padding-bottom: 30px;
+  background-image: url("../img/before-mobile@1x.png");
+  background-repeat: no-repeat;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    background-image: url("../img/before-after.png");
+    background-repeat: no-repeat;
+    width: 636px;
+    height: 517px;
+    top: -169px;
+    left: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    background-image: url("../img/before-desktop.png");
+    background-repeat: no-repeat;
+    width: 636px;
+    height: 517px;
+    top: -190px;
+    left: -40px;
+  }
 }
 
 .example__after {
   display: none;
+  height: 244px;
+  padding-bottom: 30px;
+  background-image: url("../img/after-mobile@1x.png");
+  background-repeat: no-repeat;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    background-image: url("../img/before-after.png");
+    background-repeat: no-repeat;
+    width: 636px;
+    height: 517px;
+    top: -190px;
+    left: -40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    background-image: url("../img/before-desktop.png");
+    background-repeat: no-repeat;
+    width: 636px;
+    height: 517px;
+    top: -169px;
+    left: 45px;
+  }
 }
 
 .example_switch:checked ~ .example__before {
@@ -153,23 +245,37 @@
 }
 
 .example__description {
+  .mp;
   .arial;
   color: black;
   font-size: 14px;
   line-height: 18px;
+  width: 279px;
 
   @media (min-width: @tablet-width) {
+    width: 700px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 435px;
+    padding-top: 71px;
+    padding-left: 2px;
   }
 }
 
 .example__number {
+  position: relative;
+  z-index: 3;
   .regular;
   color: black;
   font-size: 24px;
   line-height: 24px;
-
+  .uppercase;
+  display: block;
+  padding-top: 13px;
+  text-align: center;
   @media (min-width: @tablet-width) {
     font-size: 30px;
     line-height: 37px;
@@ -177,13 +283,29 @@
 }
 
 .example__money-spent {
+  width: 100%;
   .regular;
   color: black;
   font-size: 14px;
   line-height: 20px;
+  display: block;
+  .uppercase;
+  .mp;
+  padding-top: 34px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
+    padding-top: 5px;
     font-size: 20px;
+    line-height: 30px;
+    width: 175px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    white-space: pre-wrap;
+    width: 328px;
+    padding-top: 55px;
   }
 }
 
@@ -197,3 +319,72 @@
     font-size: 20px;
   }
 }
+
+.example__slider-wrapper {
+  .ma;
+  .uppercase;
+  width: 198px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 367px;
+    width: 570px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 38px;
+  }
+}
+.example__slider-bar {
+  position:relative;
+  display: block;
+  box-sizing: border-box;
+  width: 84px;
+  height: 14px;
+  background-color: white;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  margin-left: 3px;
+
+  @media (min-width: @tablet-width) {
+    border:none;
+    background-color: #cdcdcd;
+    width: 428px;
+    height: 6px;
+  }
+}
+
+.example__slider-bar small {
+  position: absolute;
+  content: "";
+  width: 35px;
+  height: 6px;
+  background-color: @button-green;
+  border-radius: 3px;
+  top: 3px;
+  left: 5px;
+
+  @media (min-width: @tablet-width) {
+    width: 34px;
+    height: 34px;
+    border-radius: 40px;
+    background-color: white;
+    box-shadow: 0 0 3px black;
+    top: -13px;
+    left: 197px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 4px;
+      background-color: @button-green;
+      top: 13px;
+      left: 13px;
+
+    }
+    }
+  }

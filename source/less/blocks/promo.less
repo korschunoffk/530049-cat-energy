@@ -9,7 +9,7 @@
 
   @media (min-width: @desktop-width) {
     background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 50%, rgb(104, 172, 63) 49.9%, rgb(104, 172, 63) 100%);
-    margin-top: -110px;
+    margin-top: -172px;
   }
 }
 
@@ -24,10 +24,14 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
+    .ma;
     background-image: url("../img/index-can-tablet.jpg");
-    width: 708px;
-    height: 609px;
-    margin-top: 50px;
+    background-position: 28px 230px;
+    width: 768px;
+    box-sizing: border-box;
+    padding:0 30px;
+    min-height: 840px;
+
   }
 
   @media (min-width: @desktop-width) {
@@ -44,7 +48,8 @@
   width: 280px;
   height: 271px;
   background-image: url("../img/index-can-mobile.png");
-  margin-top: 200px;
+  margin-top: 168px;
+  margin-left: 20px;
 
   @media (min-width: @tablet-width) {
     background-image: none;
@@ -56,8 +61,8 @@
     background-image: url("../img/index-can-desktop.png");
     width: 552px;
     height: 499px;
-    margin-top: 150px;
-    margin-left: 550px;
+    margin-top: 142px;
+    margin-left: 530px;
   }
 }
 
@@ -66,13 +71,26 @@
   color: white;
   font-size: 36px;
   line-height: 36px;
-  width: 280px;
+  width: 249px;
   .ma;
+  text-indent: 10px;
+  padding-top: 28px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
     color: black;
+    width: 427px;
+    margin:0;
+    padding-left: 86px;
+    padding-top: 30px;
+    text-indent: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 416px;
+    padding-top:224px;
+    padding-left: 160px;
   }
 }
 
@@ -83,11 +101,23 @@
   line-height: 14px;
   width: 280px;
   .ma;
+  .uppercase;
+  text-align: center;
+  padding-top: 25px;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     color: black;
     font-size: 20px;
     line-height: 20px;
+    width: 295px;
+    padding-left: 80px;
+    padding-top: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 39px;
+    padding-left: 155px;
   }
 }
 
@@ -103,12 +133,18 @@
   display: block;
   text-align: center;
   background-color: @button-green;
-  margin-top: 300px;
+  margin-top: 301px;
   margin-left: 20px;
 
   @media (min-width: @tablet-width) {
     width: 245px;
     line-height: 52px;
     font-size: 20px;
+    margin-top: 43px;
+    margin-left: 88px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 53px;
+    margin-left: 159px;
   }
 }

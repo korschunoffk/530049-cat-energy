@@ -5,29 +5,51 @@
 
 .page-footer__wrapper {
   width: 320px;
+  box-sizing: border-box;
   margin: 0 auto;
+  padding: 0 20px;
   display: block;
 
+
   @media (min-width: @tablet-width) {
-    width: 708px;
+    box-sizing: border-box;
+    width: 768px;
     padding: 0 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    min-height: 150px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
-    padding: 0 40px;
+    width: 1440px;
+    padding: 0 110px;
   }
 }
 
-.partnership__map-wrapper {
+.page-footer__map-wrapper {
   width: 100vw;
+  height: 362px;
+
+  @media (min-width: @tablet-width) {
+    height: 397px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 399px;
+  }
 }
 
 .page-footer__logo {
   display: block;
   .ma;
-  height: 25px;
-  width: 129px;
+  height: 24px;
+  width: 128px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    .mp;
+    padding-right: 29px;
+  }
 }

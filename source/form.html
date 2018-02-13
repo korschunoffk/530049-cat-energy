@@ -7,10 +7,10 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+     <header class="page-header">
       <div class="page-header__wrapper">
-        <img src="http://placehold.it/50x30" alt="Логотип Cat Energy">
-        <a class="page-header__logo" href="#"><img src="http://placehold.it/50x30" alt="Логотип Cat Energy"></a>
+        <img class="page-header__icon" src="img/icon-logo-mobile.svg" alt="Логотип Cat Energy">
+        <a class="page-header__logo" href="#"><img src="img/logo-cat-enegry.svg" alt="Логотип Cat Energy"></a>
         <label class="page-header__menu-button" for="menu_switch"></label>
       </div>
       <input type="checkbox" id="menu_switch"class="visually-hidden menu_switch">
@@ -18,13 +18,13 @@
         <nav class="page-header__nav main-nav">
           <ul class="main-nav__list ">
             <li class="main-nav__item main-nav__item--black">
-              <a>Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="main-nav__item main-nav__item--black">
               <a href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item main-nav__item--black main-nav__item--active">
-              <a href="form.html">Подбор программы</a>
+              <a>Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -41,32 +41,32 @@
             <input type="text" placeholder="БАРСИК" name="cat-name" required>
             </label>
             <label class="form-cat-info__item">
-            вес(кг):<sup>*</sup>
+            вес (кг):<sup>*</sup>
             <input type="text" placeholder="7" name="cat-weight" required>
             </label>
             <label class="form-cat-info__item">
-            возраст(лет):
+            возраст (лет):
             <input type="text" placeholder="7" name="cat-age" >
             </label>
           </div>
           <div class="selection__item form-targets">
-            <label class="form-targets__item">
-            <input type="radio"  value="weight-loss" name="targets" checked >
-            похудение
+            <label>
+            <input type="radio" id="toggle1" value="weight-loss" name="targets"   checked >
+              <span  class="form-targets__item form-targets__item--1">похудение</span>
             </label>
-            <label class="form-targets__item">
-            <input type="radio"  value="mass-up" name="targets"  >
-            набор массы
+            <label>
+            <input type="radio"  value="mass-up" name="targets" id="toggle2" >
+              <span  class="form-targets__item form-targets__item--2">набор массы</span>
             </label>
-            <label class="form-targets__item">
-            <input type="radio"  value="dont-know" name="targets"  >
-            не знаю (нужен ваш совет)
-            </label >
+            <label>
+            <input type="radio"  value="dont-know" name="targets"  id="toggle3">
+              <span  class="form-targets__item form-targets__item--3">не знаю (нужен ваш совет)</span>
+            </label>
           </div>
         </div>
         <div class="selection__item  form-contacts">
-          <h2 class= "form-contacts__caption">контактные данные (владельца кота)</h2>
-          <div class="selection__wrapper-contacts">
+          <h2 class= "form-contacts__caption">Контактные данные (владельца кота)</h2>
+          <div class="form-contacts__wrapper">
             <label class="form-contacts__item form-contacts__item--email">
             e-mail:<sup>*</sup>
             <input type="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required>
@@ -77,57 +77,59 @@
             </label>
           </div>
         </div>
-        <div class="selection__item selection__item--comments">
+        <div class="selection__comments">
           <h2 class="selection__caption">Комментарий</h2>
-          <textarea name="cat-comment" placeholder="расскажите обо всех повадках кота" rows="5" cols="20">
+          <textarea name="cat-comment" rows="7" cols="40">расскажите обо всех повадках кота
           </textarea>
         </div>
         <div class="selection__item extra">
           <h2 class="extra__caption">Дополнительно</h2>
           <div class="extra__item-wrapper">
-            <label class="extra__item">
-            <input type="checkbox" name="extra" value="sweetener" checked>
-            сахарозаменитель
+            <label>
+            <input type="checkbox" id="extra__checkbox1" name="extra" value="sweetener" checked>
+              <span class="extra__item extra__item--1">сахарозаменитель</span>
             </label>
-            <label class="extra__item">
-            <input type="checkbox" name="extra" value="water">
-            питьевая вода
+            <label>
+            <input type="checkbox" id="extra__checkbox2" name="extra" value="water">
+              <span class="extra__item extra__item--2">питьевая вода</span>
             </label>
-            <label class="extra__item">
-            <input type="checkbox" name="extra" value="milk">
-            молоко
+            <label>
+            <input type="checkbox" id="extra__checkbox3" name="extra" value="milk">
+              <span class="extra__item extra__item--3">молоко</span>
             </label>
-            <label class="extra__item">
-            <input type="checkbox" name="extra" value="vitamins">
-            витамины
+            <label>
+            <input type="checkbox" id="extra__checkbox4" name="extra" value="vitamins">
+              <span class="extra__item extra__item--4">витамины</span>
             </label>
           </div>
         </div>
         <button type="submit" class="selection-button button">отправить заявку</button>
-        <small class="selection__notice"><sup>*</sup>-Обязательные поля</small>
+        <small class="selection__notice"><sup>*</sup> — Обязательные поля</small>
       </form>
     </main>
     <footer class="page-footer">
-      <section class="partnership">
+      <section class="partnership partnership--form ">
         <div class="partnership__wrapper">
-          <h3 class="partnership__invite"> приглашаем к сотрудничеству дилеров!</h3>
-          <p class="partnership__address">
-            ул. Большая Конюшенная, д.19/8 Санкт-Петербург
+          <h3 class="partnership__invite">приглашаем
+к сотрудничеству дилеров!</h3>
+          <p class="partnership__address">ул. Большая Конюшенная, д. 19/8
+
+Санкт-Петербург
           </p>
         </div>
       </section>
-      <div class="map-wrapper">map
+      <div class="page-footer__map-wrapper">map
       </div>
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="#"><img src="http://placehold.it/50x30" alt="Логотип Cat Energy"></a>
+        <a class="page-footer__logo" href="#"><img src="img/logo-cat-enegry.svg" alt="Логотип Cat Energy"></a>
         <div class="page-footer__social social">
-          <a class="social__link social__link--vkontakte" href="#">vkontante</a>
-          <a class="social__link social__link--instagram" href="#">instagram</a>
-          <a class="social__link social__link--facebook" href="#">facebook</a>
+          <a class="social__link social__link--vkontakte" href="#"></a>
+          <a class="social__link social__link--instagram" href="#"></a>
+          <a class="social__link social__link--facebook" href="#"></a>
         </div>
         <div class="page-footer__developers developers">
           <a class="developers__item developers__item--text" href="#">HTML Academy</a>
-          <a class="developers__item developers__item--pic" href="#">Логотип HTML Academy</a>
+          <a class="developers__item developers__item--logo" href="#"></a>
         </div>
       </div>
     </footer>
