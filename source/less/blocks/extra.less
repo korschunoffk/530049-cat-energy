@@ -5,10 +5,20 @@
   position:absolute;
   content: "";
   z-index: -1;
-  width: 100vw;
+  width: 100%;
   height: 3px;
   background-color: @button-green;
   top: 37px;
+
+  @media (min-width: @tablet-width) {
+    top: 83px;
+    left: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 85px;
+    left: 1px;
+  }
 }
 
 .extra__item-wrapper {
@@ -17,6 +27,17 @@
   width: 320px;
   padding: 0 20px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+  }
 }
 .extra__item-wrapper input{
   .visually-hidden;
@@ -37,11 +58,33 @@
     left:1px;
   }
   @media (min-width: @tablet-width) {
-    width: 324px;
+    width: 345px;
+    box-sizing: border-box;
+    padding-left: 99px;
+    line-height: 72px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 38px;
+      height: 38px;
+      border: 1px solid #cfcfcf;
+      top: 17px;
+      left: 41px;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 245px;
+    padding-left: 58px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 38px;
+      height: 38px;
+      border: 1px solid #cfcfcf;
+      top: 17px;
+      left: 0;
+    }
   }
 }
 
@@ -61,6 +104,17 @@
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-top: 37px;
+    width: 294px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+    padding-top: 26px;
+    width: 250px;
   }
 }
 #extra__checkbox1:checked ~ .extra__item--1 ,
@@ -76,5 +130,31 @@
     height: 16px;
     top: 15px;
     left: 5px;
+  }
+
+  @media (min-width: @tablet-width) {
+   &::after{
+    position: absolute;
+    content: "";
+    background-image: url("../img/tick.png");
+    z-index: 2;
+    width: 21px;
+    height: 16px;
+    top: 28px;
+    left: 52px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+   &::after{
+    position: absolute;
+    content: "";
+    background-image: url("../img/tick.png");
+    z-index: 2;
+    width: 21px;
+    height: 16px;
+    top: 28px;
+    left: 9px;
+    }
   }
 }
