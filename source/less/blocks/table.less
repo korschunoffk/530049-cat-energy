@@ -23,7 +23,7 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 29px;
-    border-bottom: none;
+    border-bottom: 1px solid #cdcdcd;
   }
   @media (min-width: @desktop-width) {
     border-bottom: 1px solid #cdcdcd;
@@ -60,7 +60,11 @@
     border-bottom: none;
   }
 }
-
+.table--addictional .table__column {
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+}
 .table--addictional .table__column--left {
   text-align: right;
 

@@ -18,6 +18,10 @@
     background-color: white;
     border-top: 2px solid #f2f2f2;
   }
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }
 
 .example__caption {
@@ -183,12 +187,22 @@
   height: 244px;
   padding-bottom: 30px;
   background-image: url("../img/before-mobile@1x.png");
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/before-mobile@2x.png");
+    background-size: cover;
+  }
   background-repeat: no-repeat;
   width: 320px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    background-image: url("../img/before-after.png");
+    background-image: url("../img/before-tablet@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/before-tablet@2x.png");
+      background-size: cover;
+    }
     background-repeat: no-repeat;
     width: 636px;
     height: 517px;
@@ -197,11 +211,6 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    background-image: url("../img/before-desktop.png");
-    background-repeat: no-repeat;
-    width: 636px;
-    height: 517px;
     top: -190px;
     left: -40px;
   }
@@ -212,27 +221,32 @@
   height: 244px;
   padding-bottom: 30px;
   background-image: url("../img/after-mobile@1x.png");
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/after-mobile@2x.png");
+    background-size: cover;
+  }
   background-repeat: no-repeat;
   width: 320px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    background-image: url("../img/before-after.png");
+    background-image: url("../img/after-tablet@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/after-tablet@2x.png");
+      background-size: contain;
+    }
     background-repeat: no-repeat;
     width: 636px;
     height: 517px;
-    top: -190px;
-    left: -40px;
+    top: -170px;
+    left: 45px;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    background-image: url("../img/before-desktop.png");
-    background-repeat: no-repeat;
-    width: 636px;
-    height: 517px;
-    top: -169px;
-    left: 45px;
+    top: -190px;
+    left: -42px;
   }
 }
 

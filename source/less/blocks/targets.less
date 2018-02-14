@@ -128,7 +128,6 @@
       content: "";
       background-image: url("../img/icon-right-arrow-long.svg");
       width: 24px;
-      width: 24px;
       height: 11px;
       background-repeat: no-repeat;
       left: 130px;
@@ -141,77 +140,104 @@
   &::before {
     position: absolute;
     content: "";
-    background-image: url("../img/icon-slim-mobile.png");
+    background-image: url("../img/icon-cat-slim.svg");
     background-size: cover;
-    width: 50px;
-    height: 53px;
+    width: 35px;
+    height: 49px;
     top: 21px;
-    left: 22px;
-  }
+    left: 30px;
+    z-index: 2;
 
-  @media (min-width: @tablet-width) {
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../img/icon-slim-mobile.png");
-      background-size: cover;
-      width: 200px;
-      height: 212px;
+    @media (min-width: @tablet-width) {
+      width: 140px;
+      height: 194px;
       top: 80px;
-      left: 447px;
+      left: 475px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 70px;
+      height: 97px;
+      top: 41px;
+      left: 65px;
     }
   }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: @button-green;
+    top: 24px;
+    left: 23px;
+    z-index: 1;
 
-  @media (min-width: @desktop-width) {
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../img/icon-slim-mobile.png");
-      background-size: cover;
+    @media (min-width: @tablet-width) {
+      width: 200px;
+      height: 200px;
+      top: 92px;
+      left: 445px;
+    }
+
+    @media (min-width: @desktop-width) {
       width: 100px;
-      height: 106px;
-      top: 41px;
+      height: 100px;
+      top: 48px;
       left: 51px;
     }
   }
-
 }
 
 .targets__title--mass {
   &::before {
     position: absolute;
     content: "";
-    background-image: url("../img/icon-mass-mobile.png");
+    background-image: url("../img/icon-cat-pro.svg");
     background-size: cover;
     width: 67px;
-    height: 50px;
-    top: 23px;
+    height: 28px;
+    top: 35px;
     left: 14px;
-  }
+    z-index: 2;
 
-  @media (min-width: @tablet-width) {
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../img/icon-mass-mobile.png");
-      background-size: cover;
+    @media (min-width: @tablet-width) {
       width: 268px;
-      height: 200px;
-      top: 92px;
-      left: 413px;
+      height: 112px;
+      top: 135px;
+      left: 412px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 134px;
+      height: 56px;
+      top: 70px;
+      left: 34px;
     }
   }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: @button-green;
+    top: 24px;
+    left: 23px;
+    z-index: 1;
 
-  @media (min-width: @desktop-width) {
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../img/icon-mass-mobile.png");
-      background-size: cover;
-      width: 134px;
+    @media (min-width: @tablet-width) {
+      width: 200px;
+      height: 200px;
+      top: 92px;
+      left: 446px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 100px;
       height: 100px;
-      top: 47px;
-      left: 34px;
+      top: 48px;
+      left: 51px;
     }
   }
 }
