@@ -30,17 +30,43 @@
     text-decoration: none;
     color: black;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 39px;
   }
 
   @media (min-width: @desktop-width) {
     color: white;
     font-size: 20px;
+    line-height: 39px;
+  }
+  &:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.4);
   }
 }
 
 .main-nav__item--black a {
   @media (min-width: @desktop-width) {
     color: black;
+  }
+   &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  &:active {
+    color: rgba(0, 0, 0, 0.4);
+  }
+}
+.main-nav__item--active {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @button-green;
+  }
+  @media (min-width: @desktop-width) {
+    border-bottom: 2px solid white;
+  }
+}
+.main-nav__item--active-black {
+  @media (min-width: @tablet-width) {
+    border-bottom: 2px solid @button-green;
   }
 }

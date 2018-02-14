@@ -331,7 +331,18 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
+    border-bottom: 1px dashed #bebebe;
+    line-height: 24px;
+    box-sizing: border-box;
+
+    &:hover {
+      border-bottom: 1px solid #bebebe;
+    }
+    &:active {
+      border-bottom: 1px solid rgba(0, 0, 0, 0);
+    }
   }
+
 }
 
 .example__slider-wrapper {
@@ -380,6 +391,7 @@
   border-radius: 3px;
   top: 3px;
   left: 5px;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     width: 34px;
@@ -389,6 +401,10 @@
     box-shadow: 0 0 3px black;
     top: -13px;
     left: 197px;
+
+    &:hover {
+      box-shadow: 0 1px 3px black;
+    }
     &::before {
       position: absolute;
       content: "";
@@ -398,7 +414,18 @@
       background-color: @button-green;
       top: 13px;
       left: 13px;
-
     }
+    &:active {
+      &:after {
+        position: absolute;
+        content: "";
+        width: 34px;
+        height: 34px;
+        border: 2px solid @button-green;
+        border-radius: 50%;
+        top: -2px;
+        left: -2px;
+      }
     }
   }
+}

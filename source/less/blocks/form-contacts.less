@@ -8,7 +8,6 @@
   width: 221px;
   white-space: normal;
   background-color: white;
-  padding-right: 20px;
   margin-top: 27px;
   margin-bottom: 26px;
 
@@ -23,8 +22,10 @@
     padding-bottom: 65px;
   }
   @media (min-width: @desktop-width) {
-    padding: 0px;
-    width: 552px;
+    box-sizing: border-box;
+    width: 594px;
+    padding: 0 40px;
+    margin-left: -40px;
   }
 }
 .form-contacts {
@@ -34,7 +35,9 @@
   position:absolute;
   content: "";
   z-index: -1;
-  width: 100%;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
   height: 3px;
   background-color: @button-green;
   top: 40px;

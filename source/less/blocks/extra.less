@@ -5,19 +5,19 @@
   position:absolute;
   content: "";
   z-index: -1;
-  width: 100%;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
   height: 3px;
   background-color: @button-green;
   top: 37px;
 
   @media (min-width: @tablet-width) {
     top: 83px;
-    left: 1px;
   }
 
   @media (min-width: @desktop-width) {
     top: 85px;
-    left: 1px;
   }
 }
 
@@ -112,9 +112,13 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 0;
+
     padding-top: 26px;
-    width: 250px;
+    width: 293px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    margin-left: -40px;
   }
 }
 #extra__checkbox1:checked ~ .extra__item--1 ,
