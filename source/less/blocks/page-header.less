@@ -47,22 +47,30 @@
   }
 }
 
+.page-header__menu-button--closed {
+  display: block;
+  background-image: url("../img/mobile-menu-open.png");
+  width: 24px;
+  height: 18px;
+}
+
+.page-header__menu-button--opened {
+  display: block;
+  background-image: url("../img/icon-close.svg");
+  width: 24px;
+  height: 24px;
+}
+
 .menu_switch:checked ~ .page-header__nav-wrapper {
   display: block;
 }
-
 .page-header__wrapper label {
   @media (min-width: @tablet-width) {
     .visually-hidden;
   }
 }
 
-.page-header__menu-button {
-  display: block;
-  background-image: url("../img/mobile-menu-open.png");
-  width: 24px;
-  height: 18px;
-}
+
 .page-header__logo {
   margin-left: -10px;
   width: 101px;

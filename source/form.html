@@ -19,7 +19,7 @@
         </a>
         <a class="page-header__logo" href="#">
           <img src="img/logo-cat-enegry.svg" alt="Логотип Cat Energy"></a>
-        <label class="page-header__menu-button" for="menu_switch"></label>
+        <label class="page-header__menu-button page-header__menu-button--closed" for="menu_switch" tabindex="0"></label>
       </div>
       <input type="checkbox" id="menu_switch"class="visually-hidden menu_switch">
       <div class="page-header__nav-wrapper">
@@ -41,47 +41,47 @@
     <main class="page-form">
       <h1 class="page-form__caption">Подбор программы</h1>
       <p class="page-form__description">заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form class="selection" method="post" action="https://echo.htmlacademy.ru">
+      <form class="selection" name='form' method="post" action="https://echo.htmlacademy.ru" onsubmit='return validate()' >
         <div class="selection__wrapper-top">
           <div class="selection__item form-cat-info">
             <label class="form-cat-info__item">
             имя:<sup>*</sup>
-            <input type="text" placeholder="БАРСИК" name="cat-name" required>
+            <input type="text" placeholder="БАРСИК" name="cat-name" class="form-cat-info__input">
             </label>
             <label class="form-cat-info__item">
             вес (кг):<sup>*</sup>
-            <input type="text" placeholder="7" name="cat-weight" required>
+            <input type="text" placeholder="7" name="cat-weight" class="form-cat-info__input">
             </label>
             <label class="form-cat-info__item">
             возраст (лет):
-            <input type="text" placeholder="7" name="cat-age" >
+            <input type="text" placeholder="7" name="cat-age"  class="form-cat-info__input">
             </label>
           </div>
           <div class="selection__item form-targets">
             <label>
             <input type="radio" id="toggle1" value="weight-loss" name="targets"   checked >
-              <span  class="form-targets__item form-targets__item--1">похудение</span>
+              <span  class="form-targets__item form-targets__item--1" tabindex="0">похудение</span>
             </label>
             <label>
             <input type="radio"  value="mass-up" name="targets" id="toggle2" >
-              <span  class="form-targets__item form-targets__item--2">набор массы</span>
+              <span  class="form-targets__item form-targets__item--2" tabindex="0">набор массы</span>
             </label>
             <label>
             <input type="radio"  value="dont-know" name="targets"  id="toggle3">
-              <span  class="form-targets__item form-targets__item--3">не знаю (нужен ваш совет)</span>
+              <span  class="form-targets__item form-targets__item--3" tabindex="0">не знаю (нужен ваш совет)</span>
             </label>
           </div>
         </div>
         <div class="selection__item  form-contacts">
           <h2 class= "form-contacts__caption">Контактные данные (владельца кота)</h2>
           <div class="form-contacts__wrapper">
-            <label class="form-contacts__item form-contacts__item--email">
+            <label class="form-contacts__item">
             e-mail:<sup>*</sup>
-            <input type="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" required>
+            <input type="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" class="form-contacts__input form-contacts__input--email">
             </label>
-            <label class="form-contacts__item form-contacts__item--phone">
+            <label class="form-contacts__item">
             телефон:<sup>*</sup>
-            <input type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+            <input type="tel" name="tel" placeholder="8 (960) 900-60-90" class="form-contacts__input form-contacts__input--phone">
             </label>
           </div>
         </div>
@@ -95,19 +95,19 @@
           <div class="extra__item-wrapper">
             <label>
             <input type="checkbox" id="extra__checkbox1" name="extra" value="sweetener" checked>
-              <span class="extra__item extra__item--1">сахарозаменитель</span>
+              <span class="extra__item extra__item--1" tabindex="0">сахарозаменитель</span>
             </label>
             <label>
             <input type="checkbox" id="extra__checkbox2" name="extra" value="water">
-              <span class="extra__item extra__item--2">питьевая вода</span>
+              <span class="extra__item extra__item--2" tabindex="0">питьевая вода</span>
             </label>
             <label>
             <input type="checkbox" id="extra__checkbox3" name="extra" value="milk">
-              <span class="extra__item extra__item--3">молоко</span>
+              <span class="extra__item extra__item--3" tabindex="0">молоко</span>
             </label>
             <label>
             <input type="checkbox" id="extra__checkbox4" name="extra" value="vitamins">
-              <span class="extra__item extra__item--4">витамины</span>
+              <span class="extra__item extra__item--4" tabindex="0">витамины</span>
             </label>
           </div>
         </div>
@@ -129,20 +129,32 @@
       <div class="page-footer__map-wrapper" id="map">
       </div>
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="#"><img src="img/logo-cat-enegry.svg" alt="Логотип Cat Energy"></a>
+        <a class="page-footer__logo" href="#" tabindex="0"><img src="img/logo-cat-enegry.svg" alt="Логотип Cat Energy"></a>
         <div class="page-footer__social social">
-          <a class="social__link social__link--vkontakte" href="#"></a>
-          <a class="social__link social__link--instagram" href="#"></a>
-          <a class="social__link social__link--facebook" href="#"></a>
+          <a class="social__link social__link--vkontakte" href="#" tabindex="0"></a>
+          <a class="social__link social__link--instagram" href="#" tabindex="0"></a>
+          <a class="social__link social__link--facebook" href="#" tabindex="0"></a>
         </div>
         <div class="page-footer__developers developers">
-          <a class="developers__item developers__item--text" href="#">HTML Academy</a>
-          <a class="developers__item developers__item--logo" href="#"></a>
+          <a class="developers__item developers__item--text" href="#" tabindex="0">HTML Academy</a>
+          <a class="developers__item developers__item--logo" href="#" tabindex="0"></a>
         </div>
       </div>
     </footer>
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript"></script>
+    <script>
+      var navToggle = document.querySelector('.page-header__menu-button');
+      navToggle.addEventListener('click', function() {
+        if (navToggle.classList.contains('page-header__menu-button--closed')) {
+        navToggle.classList.add('page-header__menu-button--opened');
+        navToggle.classList.remove('page-header__menu-button--closed');
+        }else{
+          navToggle.classList.remove('page-header__menu-button--opened');
+          navToggle.classList.add('page-header__menu-button--closed');
+        };
+      });
+    </script>
   </body>
 </html>
 

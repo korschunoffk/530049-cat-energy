@@ -29,3 +29,44 @@
       myMap.setCenter([59.938707, 30.319369], 17);
       }
 });
+
+  var form = document.querySelector(".selection");
+  var catname = form.querySelector("[name=cat-name]");
+  var catweight = form.querySelector("[name=cat-weight]");
+  var email= form.querySelector("[name=email]");
+  var tel = form.querySelector("[name=tel]");
+
+   form.addEventListener("submit", function (evt) {
+    if (!catname.value) {
+      catname.classList.add("selection__red-border");
+      event.preventDefault();
+    }
+     else {
+      catname.classList.remove("selection__red-border");
+     }
+     if (!catweight.value) {
+      catweight.classList.add("selection__red-border");
+      event.preventDefault();
+    }
+     else {
+      catweight.classList.remove("selection__red-border");
+     }
+     if (!email.value) {
+      email.classList.add("selection__red-border");
+      email.classList.add("form-contacts__input--email-red");
+      event.preventDefault();
+    }
+     else {
+      email.classList.remove("selection__red-border");
+      email.classList.remove("form-contacts__input--email-red");
+     }
+     if (!tel.value) {
+      tel.classList.add("selection__red-border");
+      tel.classList.add("form-contacts__input--phone-red");
+      event.preventDefault();
+    }
+     else {
+      tel.classList.remove("selection__red-border");
+      email.classList.remove("form-contacts__input--phone-red");
+     }
+});

@@ -83,7 +83,7 @@
     .mp;
   }
 }
-.form-contacts__item input {
+.form-contacts__input {
   position: relative;
   width: 100%;
   .regular;
@@ -103,10 +103,19 @@
     padding-left: 15px;
   }
 }
-.form-contacts__item--email input{
+.form-contacts__input--email{
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
   background-position: 97% 55%;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+  &:focus {
+    background-image: url("../img/icon-mail-green.svg");
+    border: 1px solid black;
+    outline: 1px solid black;
+  }
 
   @media (min-width: @tablet-width) {
     padding-left: 20px;
@@ -116,10 +125,23 @@
   }
 }
 
-.form-contacts__item--phone input {
+.form-contacts__input--email-red {
+  background-image: url("../img/icon-mail-red.svg");
+}
+
+.form-contacts__input--phone {
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
   background-position: 97% 55%;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+  &:focus {
+    background-image: url("../img/icon-phone-green.svg");
+    border: 1px solid black;
+    outline: 1px solid black;
+  }
 
   @media (min-width: @tablet-width) {
     padding-left: 20px;
@@ -129,4 +151,8 @@
     padding-left: 15px;
     background-position: 96% 53%;
   }
+}
+
+.form-contacts__input--phone-red {
+  background-image: url("../img/icon-phone-red.svg");
 }

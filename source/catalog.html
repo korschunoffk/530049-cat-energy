@@ -19,7 +19,7 @@
         </a>
         <a class="page-header__logo" href="#">
           <img src="img/logo-cat-enegry.svg" alt="Логотип Cat Energy"></a>
-        <label class="page-header__menu-button" for="menu_switch"></label>
+        <label class="page-header__menu-button page-header__menu-button--closed" for="menu_switch"  tabindex="0"></label>
       </div>
       <input type="checkbox" id="menu_switch"class="visually-hidden menu_switch">
       <div class="page-header__nav-wrapper">
@@ -327,19 +327,31 @@
       <div class="page-footer__map-wrapper" id="map">
       </div>
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo" href="#"><img src="img/logo-cat-enegry.svg" alt="Логотип Cat Energy"></a>
+        <a class="page-footer__logo" href="#" tabindex="0"><img src="img/logo-cat-enegry.svg" alt="Логотип Cat Energy"></a>
         <div class="page-footer__social social">
-          <a class="social__link social__link--vkontakte" href="#"></a>
-          <a class="social__link social__link--instagram" href="#"></a>
-          <a class="social__link social__link--facebook" href="#"></a>
+          <a class="social__link social__link--vkontakte" href="#" tabindex="0"></a>
+          <a class="social__link social__link--instagram" href="#" tabindex="0"></a>
+          <a class="social__link social__link--facebook" href="#" tabindex="0"></a>
         </div>
         <div class="page-footer__developers developers">
-          <a class="developers__item developers__item--text" href="#">HTML Academy</a>
-          <a class="developers__item developers__item--logo" href="#"></a>
+          <a class="developers__item developers__item--text" href="#" tabindex="0">HTML Academy</a>
+          <a class="developers__item developers__item--logo" href="#" tabindex="0"></a>
         </div>
       </div>
     </footer>
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/script.js" type="text/javascript"></script>
+    <script>
+      var navToggle = document.querySelector('.page-header__menu-button');
+      navToggle.addEventListener('click', function() {
+        if (navToggle.classList.contains('page-header__menu-button--closed')) {
+        navToggle.classList.add('page-header__menu-button--opened');
+        navToggle.classList.remove('page-header__menu-button--closed');
+        }else{
+          navToggle.classList.remove('page-header__menu-button--opened');
+          navToggle.classList.add('page-header__menu-button--closed');
+        };
+      });
+    </script>
   </body>
 </html>
