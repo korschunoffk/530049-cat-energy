@@ -1,8 +1,9 @@
 .extra {
   position: relative;
 }
+
 .extra::before {
-  position:absolute;
+  position: absolute;
   content: "";
   z-index: -1;
   width: 100vw;
@@ -39,9 +40,11 @@
     padding: 0;
   }
 }
-.extra__item-wrapper input{
+
+.extra__item-wrapper input {
   .visually-hidden;
 }
+
 .extra__item {
   position: relative;
   width: 280px;
@@ -49,9 +52,10 @@
   padding-left: 47px;
   line-height: 43px;
 
-  &:active{
+  &:active {
     opacity: 0.5;
   }
+
   &:hover {
     &::before {
       position: absolute;
@@ -63,11 +67,11 @@
       left: 1px;
 
       @media (min-width: @tablet-width) {
-          width: 38px;
-          height: 38px;
-          border: 1px solid #bababa;
-          top: 17px;
-          left: 41px;
+        width: 38px;
+        height: 38px;
+        border: 1px solid #bababa;
+        top: 17px;
+        left: 41px;
       }
 
       @media (min-width: @desktop-width) {
@@ -79,6 +83,7 @@
       }
     }
   }
+
   &::before {
     position: absolute;
     content: "";
@@ -88,11 +93,13 @@
     top: 8px;
     left: 1px;
   }
+
   @media (min-width: @tablet-width) {
     width: 345px;
     box-sizing: border-box;
     padding-left: 99px;
     line-height: 72px;
+
     &::before {
       position: absolute;
       content: "";
@@ -107,6 +114,7 @@
   @media (min-width: @desktop-width) {
     width: 245px;
     padding-left: 58px;
+
     &::before {
       position: absolute;
       content: "";
@@ -152,10 +160,11 @@
     margin-left: -40px;
   }
 }
-#extra__checkbox1:checked ~ .extra__item--1 ,
-#extra__checkbox2:checked ~ .extra__item--2 ,
-#extra__checkbox3:checked ~ .extra__item--3 ,
-#extra__checkbox4:checked ~ .extra__item--4 {
+
+.extra__checkbox1:checked ~ .extra__item--1,
+.extra__checkbox2:checked ~ .extra__item--2,
+.extra__checkbox3:checked ~ .extra__item--3,
+.extra__checkbox4:checked ~ .extra__item--4 {
   &::after{
     position: absolute;
     content: "";
@@ -168,28 +177,29 @@
   }
 
   @media (min-width: @tablet-width) {
-  &::after{
-    position: absolute;
-    content: "";
-    background-image: url("../img/tick.png");
-    z-index: 2;
-    width: 21px;
-    height: 16px;
-    top: 28px;
-    left: 52px;
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/tick.png");
+      z-index: 2;
+      width: 21px;
+      height: 16px;
+      top: 28px;
+      left: 52px;
     }
   }
 
   @media (min-width: @desktop-width) {
-  &::after{
-    position: absolute;
-    content: "";
-    background-image: url("../img/tick.png");
-    z-index: 2;
-    width: 21px;
-    height: 16px;
-    top: 28px;
-    left: 9px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/tick.png");
+      z-index: 2;
+      width: 21px;
+      height: 16px;
+      top: 28px;
+      left: 9px;
     }
   }
 }

@@ -52,6 +52,7 @@
     padding-top: 76px;
     padding-bottom: 25px;
   }
+
   @media (min-width: @desktop-width) {
     padding-left: 162px;
   }
@@ -63,7 +64,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  margin:0 20px;
+  margin: 0 20px;
   padding-bottom: 22px;
   border-bottom: 1px solid @text-gray;
 
@@ -74,6 +75,7 @@
     line-height: 24px;
     border-bottom: none;
   }
+
   @media (min-width: @desktop-width) {
     width: 470px;
     padding-top: 49px;
@@ -100,10 +102,10 @@
     height: 11px;
     background-repeat: no-repeat;
     left: 97px;
-    top:21px;
+    top: 21px;
   }
 
-  &:hover{
+  &:hover {
     &::before {
       position: absolute;
       content: "";
@@ -112,9 +114,10 @@
       height: 11px;
       background-repeat: no-repeat;
       left: 97px;
-      top:21px;
+      top: 21px;
     }
   }
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
@@ -130,25 +133,26 @@
       background-repeat: no-repeat;
       left: 130px;
       top: 61px;
-
     }
 
-      &:hover{
-        &::before {
-          position: absolute;
-          content: "";
-          background-image: url("../img/icon-right-arrow-verylong.svg");
-          width: 32px;
-          height: 11px;
-          background-repeat: no-repeat;
-          left: 130px;
-          top:61px;
-        }
+    &:hover{
+
+      &::before {
+        position: absolute;
+        content: "";
+        background-image: url("../img/icon-right-arrow-verylong.svg");
+        width: 32px;
+        height: 11px;
+        background-repeat: no-repeat;
+        left: 130px;
+        top: 61px;
       }
+    }
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 32px;
+
     &::before {
       position: absolute;
       content: "";
@@ -159,19 +163,22 @@
       left: 130px;
       top: 35px;
     }
+
     &:hover{
-        &::before {
-          position: absolute;
-          content: "";
-          background-image: url("../img/icon-right-arrow-verylong.svg");
-          width: 32px;
-          height: 11px;
-          background-repeat: no-repeat;
+
+      &::before {
+        position: absolute;
+        content: "";
+        background-image: url("../img/icon-right-arrow-verylong.svg");
+        width: 32px;
+        height: 11px;
+        background-repeat: no-repeat;
           left: 130px;
-          top:35px;
-        }
+        top: 35px;
       }
+    }
   }
+
   &:active {
     opacity: 0.6;
   }
@@ -203,6 +210,7 @@
       left: 65px;
     }
   }
+
   &::after {
     position: absolute;
     content: "";
@@ -256,6 +264,7 @@
       left: 34px;
     }
   }
+
   &::after {
     position: absolute;
     content: "";
@@ -285,10 +294,10 @@
 
 .targets__description__mass {
   @media (min-width: @tablet-width) {
-    width:340px;
+    width: 340px;
   }
 
   @media (min-width: @desktop-width) {
-    width:475px;
+    width: 475px;
   }
 }

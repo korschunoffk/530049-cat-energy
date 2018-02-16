@@ -9,7 +9,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 320px;
-  box-sizing:border-box;
+  box-sizing: border-box;
   padding: 0 20px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ededed;
@@ -38,7 +38,7 @@
 
 .catalog__link--small {
   @media (min-width: @tablet-width) {
-    position:absolute;
+    position: absolute;
     top: -46px;
     left: 0;
   }
@@ -46,21 +46,21 @@
   @media (min-width: @desktop-width) {
     position:absolute;
     top: -46px;
-    left: 0px;
+    left: 0;
   }
 }
 
 .catalog__link--big {
   @media (min-width: @tablet-width) {
-    position:absolute;
+    position: absolute;
     top: -82px;
-    left: 0px;
+    left: 0;
   }
 
   @media (min-width: @desktop-width) {
-    position:absolute;
+    position: absolute;
     top: -82px;
-    left: 0px;
+    left: 0;
   }
 }
 
@@ -107,11 +107,11 @@
   width: 100%;
   margin-top: -5px;
 
-  &:hover{
+  &:hover {
     background-color: @button-green-hvr;
   }
 
-  &:active{
+  &:active {
     background-color: @button-green-hvr;
     color: rgba(255, 255, 255, 0.4);
   }
@@ -130,14 +130,15 @@
   color: black;
   background-color: #f2f2f2;
 
-  &:hover{
+  &:hover {
     background-color: #ebebeb;
   }
 
-  &:active{
+  &:active {
     background-color: #ebebeb;
     color: rgba(0, 0, 0, 0.4);
   }
+
   @media (min-width: @tablet-width) {
     margin-top: 85px;
   }
@@ -149,14 +150,14 @@
   color: black;
   .uppercase;
   font-size: 14px;
-  width:78px;
+  width: 78px;
   line-height: 20px;
   padding-top: 20px;
   padding-bottom: 14px;
 
   @media (min-width: @tablet-width) {
     font-size: 17px;
-    width:140px;
+    width: 140px;
     padding-left: 2px;
     padding-top: 164px;
     text-align: center;
@@ -165,12 +166,12 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 162px;
-    padding-left: 0px;
+    padding-left: 0;
   }
 }
 
-.catalog__caption--plus{
-  width:280px;
+.catalog__caption--plus {
+  width: 280px;
   text-align: center;
   font-size: 16px;
 
@@ -179,6 +180,7 @@
     width: 134px;
   }
 }
+
 .catalog__small {
   .arial;
   color: @text-gray;
@@ -213,6 +215,7 @@
     margin-bottom: 49px;
   }
 }
+
 .catalog__item--more {
   @media (min-width: @tablet-width) {
     box-sizing: border-box;

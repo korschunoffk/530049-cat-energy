@@ -1,11 +1,13 @@
 .selection {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
 }
+
 .selection__wrapper-top {
   display: flex;
   flex-wrap: wrap;
   padding-top: 31px;
+
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -41,8 +43,9 @@
 
 .selection__comments {
   position: relative;
+
   &::before {
-    position:absolute;
+    position: absolute;
     content: "";
     z-index: -1;
     width: 100vw;
@@ -57,8 +60,9 @@
     width: 708px;
 
     box-sizing: border-box;
+
     &::before {
-      position:absolute;
+      position: absolute;
       content: "";
       z-index: -1;
       width: 100vw;
@@ -68,10 +72,12 @@
       background-color: @button-green;
       top: 74px;
     }
+
     @media (min-width: @desktop-width) {
       width: 100%;
+
       &::before {
-        position:absolute;
+        position: absolute;
         content: "";
         z-index: -1;
         width: 100vw;
@@ -107,7 +113,6 @@
     .mp;
     padding: 0 40px;
     padding-top: 58px;
-    width: 218px;
     padding-bottom: 30px;
     box-sizing: border-box;
     width: 260px;
@@ -146,6 +151,7 @@
     padding-left: 14px;
   }
 }
+
 .selection-button {
   width: 280px;
   margin: 0 20px;
@@ -158,11 +164,11 @@
   font-size: 16px;
   line-height: 40px;
 
-  &:hover{
+  &:hover {
     background-color: @button-green-hvr;
   }
 
-  &:active{
+  &:active {
     background-color: @button-green-hvr;
     color: rgba(255, 255, 255, 0.4);
   }
@@ -176,6 +182,7 @@
     font-size: 20px;
     margin-bottom: 73px;
   }
+
   @media (min-width: @desktop-width) {
     width: 570px;
     margin-top: 46px;
@@ -200,7 +207,7 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 18px;
-    margin:0;
+    margin: 0;
     width: 181px;
     margin-top: 50px;
     margin-left: 41px;
@@ -215,6 +222,7 @@
 .selection__red-border {
   border: 1px solid red;
   outline: 1px solid red;
+
   &:hover {
     border: 1px solid red;
   }

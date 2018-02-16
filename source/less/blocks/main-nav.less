@@ -1,11 +1,13 @@
 .main-nav {
   .mp;
 }
+
 .main-nav__list {
   display: block;
   list-style: none;
   padding-left: 0;
   margin: 0;
+
   @media (min-width: @tablet-width) {
     min-width: 440px;
     display: flex;
@@ -23,7 +25,6 @@
   text-decoration: none;
   color: black;
   font-size: 20px;
-  line-height: 20px;
   width: 320px;
   display: block;
   text-align: center;
@@ -33,6 +34,7 @@
   &:hover {
     color: rgba(0, 0, 0, 0.6);
   }
+
   &:active {
     color: rgba(0, 0, 0, 0.4);
   }
@@ -52,35 +54,41 @@
     color: white;
     font-size: 20px;
     line-height: 39px;
+
     &:hover {
       color: rgba(255, 255, 255, 0.6);
     }
+
     &:active {
       color: rgba(255, 255, 255, 0.4);
     }
   }
-
 }
 
 .main-nav__item--black a {
   @media (min-width: @desktop-width) {
     color: black;
   }
+
   &:hover {
     color: rgba(0, 0, 0, 0.6);
   }
+
   &:active {
     color: rgba(0, 0, 0, 0.4);
   }
 }
+
 .main-nav__item--active {
   @media (min-width: @tablet-width) {
     border-bottom: 2px solid @button-green;
   }
+
   @media (min-width: @desktop-width) {
     border-bottom: 2px solid white;
   }
 }
+
 .main-nav__item--active-black {
   @media (min-width: @tablet-width) {
     border-bottom: 2px solid @button-green;
