@@ -1,6 +1,7 @@
 .product-description {
   padding: 0 20px;
   padding-bottom: 28px;
+
   @media (min-width: @tablet-width) {
     padding: 0 30px;
   }
@@ -28,10 +29,10 @@
   color: black;
   font-size: 14px;
   line-height: 18px;
-  width:200px;
+  width: 200px;
   padding-left: 80px;
   padding-top: 8px;
-  min-height:72px;
+  min-height: 72px;
   position: relative;
 
   @media (min-width: @tablet-width) {
@@ -55,12 +56,13 @@
   }
 }
 
-.product-description__item:nth-child(3) ,
+.product-description__item:nth-child(3),
 .product-description__item:nth-child(4) {
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
   }
 }
+
 .product-description__item:nth-child(4) {
   @media (min-width: @desktop-width) {
     margin-right: 0;
@@ -93,29 +95,29 @@
     position: absolute;
     content: "";
     background-image: url("../img/advantage-leaf@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+      background-size: 60%;
+    }
     background-color: @button-green;
     background-position: center;
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;
     left: 0;
-    top:7px;
-  }
+    top: 7px;
 
-  @media (min-width: @tablet-width) {
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../img/advantage-leaf@1x.png");
-      background-color: @button-green;
-      background-position: center;
+    @media (min-width: @tablet-width) {
       width: 80px;
       height: 80px;
       background-repeat: no-repeat;
       left: 0;
       top: 0;
     }
+  }
 
+  @media (min-width: @tablet-width) {
     &::after {
       z-index: -1;
       position: absolute;
@@ -135,29 +137,28 @@
     position: absolute;
     content: "";
     background-image: url("../img/advantage-powder@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+      background-size: 60%;
+    }
     background-color: @button-green;
     background-position: center;
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;
     left: 0;
-    top:6px;
-  }
+    top: 6px;
 
-  @media (min-width: @tablet-width) {
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../img/advantage-powder@1x.png");
-      background-color: @button-green;
-      background-position: center;
+    @media (min-width: @tablet-width) {
       width: 80px;
       height: 80px;
-      background-repeat: no-repeat;
       left: 0;
       top: 0;
     }
+  }
 
+  @media (min-width: @tablet-width) {
     &::after {
       z-index: -1;
       position: absolute;
@@ -177,29 +178,28 @@
     position: absolute;
     content: "";
     background-image: url("../img/advantage-dining@1x.png");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+      background-size: 60%;
+    }
     background-color: @button-green;
     background-position: center;
     width: 60px;
     height: 60px;
     background-repeat: no-repeat;
     left: 0;
-    top:6px;
-  }
+    top: 6px;
 
-  @media (min-width: @tablet-width) {
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../img/advantage-dining@1x.png");
-      background-color: @button-green;
-      background-position: center;
+    @media (min-width: @tablet-width) {
       width: 80px;
       height: 80px;
-      background-repeat: no-repeat;
       left: 0;
       top: 0;
     }
+  }
 
+  @media (min-width: @tablet-width) {
     &::after {
       z-index: -1;
       position: absolute;
@@ -225,7 +225,7 @@
     height: 60px;
     background-repeat: no-repeat;
     left: 0;
-    top:6px;
+    top: 6px;
   }
 
   @media (min-width: @tablet-width) {
@@ -233,6 +233,11 @@
       position: absolute;
       content: "";
       background-image: url("../img/advantage-clock@1x.png");
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/advantage-clock@2x.png");
+        background-size: 60%;
+      }
       background-color: @button-green;
       background-position: center;
       width: 80px;

@@ -23,12 +23,14 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 29px;
-    border-bottom: none;
+    border-bottom: 1px solid #cdcdcd;
   }
+
   @media (min-width: @desktop-width) {
     border-bottom: 1px solid #cdcdcd;
   }
 }
+
 .table__column--left {
   text-align: left;
 }
@@ -36,13 +38,14 @@
 .table__column--right {
   text-align: right;
 }
+
 .table--addictional {
   width: 100%;
   font-size: 14px;
 
   @media (min-width: @tablet-width) {
-    width:324px;
-    margin-top:-3px;
+    width: 324px;
+    margin-top: -3px;
   }
 
   @media (min-width: @desktop-width) {
@@ -52,11 +55,18 @@
     margin-left: 36px;
   }
 }
+
 .table--addictional .table__column--right {
   width: 87px;
 
   @media (min-width: @desktop-width) {
     width: 44px;
+    border-bottom: none;
+  }
+}
+
+.table--addictional .table__column {
+  @media (min-width: @tablet-width) {
     border-bottom: none;
   }
 }

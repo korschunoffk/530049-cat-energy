@@ -6,8 +6,8 @@
   border-top: 1px solid #cdcdcd;
   border-bottom: 1px solid #cdcdcd;
 
-  @media(min-width: @tablet-width) {
-    border:none;
+  @media (min-width: @tablet-width) {
+    border: none;
   }
 }
 
@@ -16,39 +16,67 @@
   height: 50px;
   padding: 6px 0;
 
-  @media(min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
     .mp;
   }
 }
 
 .social__link--vkontakte {
-  background-image: url("../img/m-vk.png");
+  background-image: url("../img/icon-vk.svg");
+  background-size: 22px 12px;
   background-repeat: no-repeat;
-  background-position: 11px 26px;
+  background-position: center;
 
-  @media(min-width: @tablet-width) {
-    background-image: url("../img/td-vk.png");
-    background-position: center;
+  &:hover {
+    background-image: url("../img/icon-vk-green.svg");
+  }
+
+  &:active {
+    background-image: url("../img/icon-vk-green.svg");
+    opacity: 0.5;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-size: auto;
   }
 }
 
 .social__link--instagram {
-  background-image: url("../img/m-insta.png");
+  background-image: url("../img/icon-insta.svg");
+  background-size: 16px;
   background-repeat: no-repeat;
   background-position: center;
 
-  @media(min-width: @tablet-width) {
-    background-image: url("../img/td-insta.png");
+  &:hover {
+    background-image: url("../img/icon-insta-green.svg");
+  }
+
+  &:active {
+    background-image: url("../img/icon-insta-green.svg");
+    opacity: 0.5;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-size: auto;
   }
 }
 
 .social__link--facebook {
-  background-image: url("../img/m-fb.png");
+  background-image: url("../img/icon-fb.svg");
+  background-size: 10px 19px;
   background-repeat: no-repeat;
   background-position: center;
 
-  @media(min-width: @tablet-width) {
-    background-image: url("../img/td-fb.png");
+  &:hover {
+    background-image: url("../img/icon-fb-green.svg");
+  }
+
+  &:active {
+    background-image: url("../img/icon-fb-green.svg");
+    opacity: 0.5;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-size: auto;
   }
 }
-

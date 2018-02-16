@@ -26,17 +26,27 @@
     margin: 0;
   }
 }
-.form-cat-info__item input {
+
+.form-cat-info__input {
   width: 100%;
   .regular;
   .uppercase;
-  color: black;
   font-size: 16px;
   line-height: 39px;
   margin-left: 15px;
   padding-left: 13px;
   border: 1px solid #e6e6e6;
   color: #444444;
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    border: 1px solid black;
+    outline: 1px solid black;
+  }
+
 
   @media (min-width: @tablet-width) {
     line-height: 52px;

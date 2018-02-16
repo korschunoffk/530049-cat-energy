@@ -1,11 +1,13 @@
 .selection {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
 }
+
 .selection__wrapper-top {
   display: flex;
   flex-wrap: wrap;
   padding-top: 31px;
+
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -41,36 +43,46 @@
 
 .selection__comments {
   position: relative;
+
   &::before {
-  position:absolute;
-  content: "";
-  z-index: -1;
-  width: 100%;
-  height: 3px;
-  background-color: @button-green;
-  top: 34px;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 100vw;
+    left: 50%;
+    transform: translate(-50%);
+    height: 3px;
+    background-color: @button-green;
+    top: 34px;
   }
 
   @media (min-width: @tablet-width) {
     width: 708px;
 
     box-sizing: border-box;
+
     &::before {
-      position:absolute;
+      position: absolute;
       content: "";
       z-index: -1;
-      width: 100%;
+      width: 100vw;
+      left: 50%;
+      transform: translate(-50%);
       height: 3px;
       background-color: @button-green;
       top: 74px;
     }
+
     @media (min-width: @desktop-width) {
       width: 100%;
+
       &::before {
-        position:absolute;
+        position: absolute;
         content: "";
         z-index: -1;
-        width: 100%;
+        width: 100vw;
+        left: 50%;
+        transform: translate(-50%);
         height: 3px;
         background-color: @button-green;
         top: 79px;
@@ -78,11 +90,11 @@
     }
   }
 }
+
 .selection__caption {
   position: relative;
-  width: 100%;
+  width: 120px;
   padding: 0 20px;
-  box-sizing: border-box;
   .regular;
   color: black;
   font-size: 24px;
@@ -99,9 +111,12 @@
 
   @media (min-width: @desktop-width) {
     .mp;
+    padding: 0 40px;
     padding-top: 58px;
-    width: 218px;
     padding-bottom: 30px;
+    box-sizing: border-box;
+    width: 260px;
+    margin-left: -40px;
   }
 }
 
@@ -136,6 +151,7 @@
     padding-left: 14px;
   }
 }
+
 .selection-button {
   width: 280px;
   margin: 0 20px;
@@ -148,6 +164,15 @@
   font-size: 16px;
   line-height: 40px;
 
+  &:hover {
+    background-color: @button-green-hvr;
+  }
+
+  &:active {
+    background-color: @button-green-hvr;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
   @media (min-width: @tablet-width) {
     padding: 0;
     margin-left: 40px;
@@ -157,6 +182,7 @@
     font-size: 20px;
     margin-bottom: 73px;
   }
+
   @media (min-width: @desktop-width) {
     width: 570px;
     margin-top: 46px;
@@ -181,7 +207,7 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 18px;
-    margin:0;
+    margin: 0;
     width: 181px;
     margin-top: 50px;
     margin-left: 41px;
@@ -190,5 +216,14 @@
   @media (min-width: @desktop-width) {
     margin-top: 56px;
     margin-left: 58px;
+  }
+}
+
+.selection__red-border {
+  border: 1px solid red;
+  outline: 1px solid red;
+
+  &:hover {
+    border: 1px solid red;
   }
 }
