@@ -32,13 +32,8 @@ gulp.task("style", function() {
     .pipe(gulp.dest("source/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
-    .pipe(minify())
-    .pipe(rename("style.min.css"))
     .pipe(gulp.dest("source/css"))
-    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
-
 });
 
 gulp.task("serve", ["style"], function() {
@@ -74,8 +69,8 @@ gulp.task("clean", function (){
 gulp.task("build", function (done){
   run(
     "clean",
-    "copy",
     "style",
+    "copy",
     done
   );
 });
