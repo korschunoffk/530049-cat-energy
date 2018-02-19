@@ -5,7 +5,7 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: none;
-  width: 221px;
+  width: 230px;
   white-space: normal;
   background-color: white;
   margin-top: 27px;
@@ -14,18 +14,19 @@
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    width: 594px;
+    width: 620px;
     .mp;
     padding-left: 40px;
-    padding-right: 42px;
+    padding-right: 32px;
     padding-top: 75px;
     padding-bottom: 65px;
   }
 
   @media (min-width: @desktop-width) {
     box-sizing: border-box;
-    width: 594px;
+    width: 618px;
     padding: 0 40px;
+    padding-left: 38px;
     margin-left: -40px;
   }
 }
@@ -43,7 +44,7 @@
   transform: translateX(-50%);
   height: 3px;
   background-color: @button-green;
-  top: 40px;
+  top: 42px;
 
   @media (min-width: @tablet-width) {
     top: 97px;
@@ -101,19 +102,21 @@
   padding-left: 13px;
   border: 1px solid #e6e6e6;
   color: #444444;
+  height: 41px;
 
   @media (min-width: @tablet-width) {
     line-height: 48px;
     font-size: 20px;
     margin-left: 20px;
     padding-left: 15px;
+    height: 48px;
   }
 }
 
 .form-contacts__input--email {
   background-image: url("../img/icon-mail.svg");
   background-repeat: no-repeat;
-  background-position: 97% 55%;
+  background-position: 92% 50%;
 
   &:hover {
     border: 1px solid #cdcdcd;
@@ -127,10 +130,11 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 20px;
+    background-position: 96% 50%;
   }
 
   @media (min-width: @desktop-width) {
-    background-position: 96% 53%;
+    background-position: 95% 53%;
   }
 }
 
@@ -141,7 +145,7 @@
 .form-contacts__input--phone {
   background-image: url("../img/icon-phone.svg");
   background-repeat: no-repeat;
-  background-position: 97% 55%;
+  background-position: 93% 50%;
 
   &:hover {
     border: 1px solid #cdcdcd;
@@ -155,6 +159,7 @@
 
   @media (min-width: @tablet-width) {
     padding-left: 20px;
+    background-position: 97% 53%;
   }
 
   @media (min-width: @desktop-width) {

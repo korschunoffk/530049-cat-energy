@@ -1,6 +1,16 @@
 .selection {
   display: flex;
   flex-wrap: wrap;
+  width: 320px;
+  .ma;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .selection__wrapper-top {
@@ -12,6 +22,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+    width: 1220px;
   }
 }
 
@@ -58,7 +69,6 @@
 
   @media (min-width: @tablet-width) {
     width: 708px;
-
     box-sizing: border-box;
 
     &::before {
@@ -70,7 +80,7 @@
       transform: translate(-50%);
       height: 3px;
       background-color: @button-green;
-      top: 74px;
+      top: 78px;
     }
 
     @media (min-width: @desktop-width) {
@@ -104,7 +114,7 @@
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    width: 259px;
+    width: 180px;
     padding: 0 40px;
     padding-top: 25px;
   }
@@ -132,6 +142,8 @@
   padding-right: 5px;
   padding-top: 13px;
   padding-bottom: 9px;
+  width: 280px;
+  height: 150px;
 
   @media (min-width: @tablet-width) {
     margin-top: 47px;
@@ -155,7 +167,7 @@
 .selection-button {
   width: 280px;
   margin: 0 20px;
-  margin-top: 26px;
+  margin-top: 29px;
   background-color: @button-green;
   border: none;
   .regular;
@@ -209,13 +221,13 @@
     line-height: 18px;
     margin: 0;
     width: 181px;
-    margin-top: 50px;
-    margin-left: 41px;
+    margin-top: 55px;
+    margin-left: 42px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-top: 56px;
-    margin-left: 58px;
+    margin-top: 60px;
+    margin-left: 59px;
   }
 }
 
