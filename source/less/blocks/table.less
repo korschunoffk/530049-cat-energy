@@ -72,7 +72,9 @@
 }
 
 .table--addictional .table__column--left {
-  text-align: right;
+  @media (min-width: @tablet-width) {
+    text-align: right;
+  }
 
   @media (min-width: @desktop-width) {
     border-bottom: none;
