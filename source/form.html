@@ -12,14 +12,14 @@
       <div class="page-header__wrapper">
         <a class="page-header__logo-adaptive" href="index.html">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="page-header__icon" src="img/logo-mobile.png" alt="Логотип Cat Energy">
           </picture>
         </a>
         <a class="page-header__logo" href="index.html">
           <img src="img/logo-cat-enegry.svg" alt="Логотип Cat Energy"></a>
-        <label class="page-header__menu-button page-header__menu-button--closed" for="menu_switch" tabindex="0"></label>
+        <label class="page-header__menu-button page-header__menu-button--closed" for="menu_switch" tabindex="0"><span class="visually-hidden">Открыть меню</span></label>
       </div>
       <input type="checkbox" id="menu_switch" class="visually-hidden menu_switch">
       <div class="page-header__nav-wrapper">
@@ -58,17 +58,17 @@
             </label>
           </div>
           <div class="selection__item form-targets">
-            <label>
-            <input type="radio" id="toggle1" value="weight-loss" name="targets"   checked >
-              <span  class="form-targets__item form-targets__item--1" tabindex="0">похудение</span>
+            <label tabindex="0">
+            <input type="radio" id="toggle1" value="weight-loss" name="targets" checked>
+              <span  class="form-targets__item form-targets__item--1" >похудение</span>
             </label>
-            <label>
+            <label tabindex="0">
             <input type="radio"  value="mass-up" name="targets" id="toggle2" >
-              <span  class="form-targets__item form-targets__item--2" tabindex="0">набор массы</span>
+              <span  class="form-targets__item form-targets__item--2">набор массы</span>
             </label>
-            <label>
+            <label tabindex="0">
             <input type="radio"  value="dont-know" name="targets"  id="toggle3">
-              <span  class="form-targets__item form-targets__item--3" tabindex="0">не знаю (нужен ваш совет)</span>
+              <span  class="form-targets__item form-targets__item--3" >не знаю (нужен ваш совет)</span>
             </label>
           </div>
         </div>
@@ -131,9 +131,9 @@
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="#" tabindex="0"><img src="img/logo-cat-enegry.svg" alt="Логотип Cat Energy"></a>
         <div class="page-footer__social social">
-          <a class="social__link social__link--vkontakte" href="#" tabindex="0"></a>
-          <a class="social__link social__link--instagram" href="#" tabindex="0"></a>
-          <a class="social__link social__link--facebook" href="#" tabindex="0"></a>
+          <a class="social__link social__link--vkontakte" href="#" tabindex="0"><span class="visually-hidden">ВКонтакте</span></a>
+          <a class="social__link social__link--instagram" href="#" tabindex="0"><span class="visually-hidden">инстаграм</span></a>
+          <a class="social__link social__link--facebook" href="#" tabindex="0"><span class="visually-hidden">фейсбук</span></a>
         </div>
         <div class="page-footer__developers developers">
           <a class="developers__item developers__item--text" href="https://htmlacademy.ru/intensive/adaptive" tabindex="0">HTML Academy</a>

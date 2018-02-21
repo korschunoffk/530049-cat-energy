@@ -1,10 +1,14 @@
 .partnership {
   background-color: white;
 
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+  }
+
   @media (min-width: @desktop-width) {
     position: relative;
-    width: 1440px;
-    padding: 0 110px;
+    width: 1300px;
+    padding: 0 40px;
     box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0);
     .ma;
@@ -28,8 +32,9 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     width: 632px;
-    padding-top: 67px;
+    padding-top: 65px;
     padding-bottom: 38px;
+    .ma;
   }
 
   @media (min-width: @desktop-width) {
@@ -62,6 +67,14 @@
     line-height: 24px;
     width: 170px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 3px;
+    margin-top: 2px;
+    font-size: 20px;
+    line-height: 24px;
+    width: 170px;
+  }
 }
 
 .partnership__address {
@@ -88,5 +101,6 @@
     width: 177px;
     line-height: 21px;
     white-space: pre-wrap;
+    margin-right: 0;
   }
 }
